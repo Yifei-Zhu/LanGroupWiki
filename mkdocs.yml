@@ -1,0 +1,31 @@
+site_name: Lan Group Wiki (SCNU)
+# site_url: https://wiki.xxx.net
+# repo_name: GitHub repository name
+# repo_url: github url
+# extra:
+#   social:
+#     - icon: material/web
+#       link: xxxxx
+#       name: 课题组网站
+#     - icon: fontawesome/brands/github
+#       link: https://github.com/chenggroup
+#       name: 课题组Github
+#     - icon: fontawesome/solid/paper-plane
+#       link: mailto:zhenggang.lan@m.scnu.edu.cn
+#       name: 联系兰峥岗老师
+theme:
+  name: material
+  theme:
+  palette: 
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode

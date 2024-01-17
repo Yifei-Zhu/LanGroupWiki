@@ -13,15 +13,18 @@ site_name: Lan Group Wiki (SCNU)
 #     - icon: fontawesome/solid/paper-plane
 #       link: mailto:zhenggang.lan@m.scnu.edu.cn
 #       name: 联系兰峥岗老师
+# plugins:
+#   - search
+#   - mkdocs-gh-pages
 theme:
   name: material
   theme:
-  palette: 
+  palette:
 
     # Palette toggle for light mode
     - scheme: default
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
 
     # Palette toggle for dark mode

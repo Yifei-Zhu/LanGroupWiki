@@ -16,6 +16,6 @@ permalink: /
 
 Wiki一些主要内容跳转：
 
-1. [新生入门须知（必读）](./wiki/Beginners/test.md)
-2. [书籍推荐]()
+1. [新生入门须知（必读）](./wiki/Beginners/welcome.md)
+2. [相关书籍推荐]()
 3. [心得体会（避坑指南）]()

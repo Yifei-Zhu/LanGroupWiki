@@ -1,9 +1,10 @@
 ---
 layout: page
-title: tes1111
-permalink: /
+title: testcomments
+author: Yifei Zhu
+comments: true
 ---
-# Test!!!!
+# Test11212121221
 
 This is a test
 asdasdas

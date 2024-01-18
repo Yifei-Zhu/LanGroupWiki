@@ -1,7 +1,7 @@
 ---
 layout: page
 title: tes1111
-permalink: /
+comments: true
 ---
 # Test!!!!
 

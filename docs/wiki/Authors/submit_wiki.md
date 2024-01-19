@@ -6,7 +6,7 @@ comments: true
 tags:
  - 作者须知
 ---
-## Markdown
+## Markdown {#markdown_tutorial}
 
 ### 编辑Wiki
 作者须提交`Markdown`文件，文本语法请查看[官方文档](https://markdown.com.cn/intro.html)。
@@ -82,8 +82,59 @@ comments: true
 ```
 [下载gview](https://pan.baidu.com/s/1Dczutuc1fMJT5vJX64YB0Q?pwd=5zy3)
 
+
+## 插入图片
+### 基本语法
+```
+![图片描述](图片URL)
+```
+目前，图片统一放置在`/docs/images`目录下，而Wiki均放在`/wiki/[subdir]`中，因为如想提供文件下载，请将文件路径写成`../../images/[filename]`
+
+此处我们选取经典图片Lenna作为示例：
+```
+![Lenna](../../images/lenna.jpg)
+```
+![Lenna](../../images/lenna.jpg)
+
+### 图片居中
+`Markdown`主要是用于简单的文本格式化，但其支持HTML的直接使用，可以使用HTML来实现图片的居中。
+需注意使用HTML区块标签时必须在前后加上空行，以便于内容区分。而且这些元素的开始与结尾标签，不可以用 tab 或是空白来缩进。
+
+```HTML
+（空行）
+<p align="center">
+  <img src="../../images/lenna.jpg" alt="这是一张示例图片">
+</p>
+（空行）
+```
+
+<p align="center">
+  <img src="../../images/lenna.jpg" alt="这是一张示例图片">
+</p>
+
+
 ## 其他
-`Markdown`的基础语法不再介绍，本部分介绍几个好用的扩展用法。
+`Markdown`的基础语法不再介绍，本部分介绍几个可能会用到的进阶用法。
+
+### 引用本Wiki章节
+在引用同一Wiki章节（二至六级标题）时，为保证多人共同开发的稳定性，请使用自定义锚点（英文）。定义方式为正常标题后加上`{#custom-anchor}`。示例：
+```
+<!-- 定义 -->
+## Markdown {#markdown_tutorial}
+<!-- 引用 -->
+[跳转到Markdown章节]{#markdown_tutorial}
+```
+[跳转到Markdown章节](#markdown_tutorial)
+
+### 任务清单
+```
+（空行）
+- [ ] 未完成任务
+- [x] 已完成任务
+```
+
+- [ ] 未完成任务
+- [x] 已完成任务
 
 ### 提示
 ```

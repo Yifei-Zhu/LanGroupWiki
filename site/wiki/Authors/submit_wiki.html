@@ -706,10 +706,43 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       文件下载
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="其他">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      提示
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      按钮
     </span>
   </a>
   
@@ -851,10 +884,43 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       文件下载
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="其他">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      提示
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      按钮
     </span>
   </a>
   
@@ -942,12 +1008,73 @@ Tags就像文章的Keywords，可以帮助我们有效检索及分类。
 comments: true
 ---
 </code></pre></div></p>
-<h3 id="_1">文件下载<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
-<p>我们的文件统一放置在<code>/docs/downloads</code>目录下，而Wiki均放在<code>/wiki/[subdir]</code>中，因为如想提供文件下载，请将文件路径写成<code>../../downloads/[filename]</code>
+<h2 id="_1">文件下载<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>目前，文件统一放置在<code>/docs/downloads</code>目录下，而Wiki均放在<code>/wiki/[subdir]</code>中，因为如想提供文件下载，请将文件路径写成<code>../../downloads/[filename]</code>
 示例：
 <div class="highlight"><pre><span></span><code>[Test Wiki的PDF](../../downloads/download_test.pdf)
 </code></pre></div>
 <a href="../../downloads/download_test.pdf">Test Wiki的PDF</a></p>
+<p>由于GitHub仓库容量有限，暂时不推荐直接上传过大的文件，后续我们会通过服务器完善这方面需求。
+目前上传大文件建议通过提供下载链接，如百度云链接(注意，这里的url后直接加上?pwd=提取码，即可自动输入提取码)，示例：
+<div class="highlight"><pre><span></span><code>[下载gview](https://pan.baidu.com/s/1Dczutuc1fMJT5vJX64YB0Q?pwd=5zy3)
+</code></pre></div>
+<a href="https://pan.baidu.com/s/1Dczutuc1fMJT5vJX64YB0Q?pwd=5zy3">下载gview</a></p>
+<h2 id="_2">其他<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><code>Markdown</code>的基础语法不再介绍，本部分介绍几个好用的扩展用法。</p>
+<h3 id="_3">提示<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>!!! tldr &quot;标题&quot;
+    内容
+</code></pre></div>
+<div class="admonition tldr">
+<p class="admonition-title">标题</p>
+<p>内容</p>
+</div>
+<div class="highlight"><pre><span></span><code>!!! tip &quot;标题&quot;
+    内容
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">标题</p>
+<p>内容</p>
+</div>
+<div class="highlight"><pre><span></span><code>!!! info &quot;标题&quot;
+    内容
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">标题</p>
+<p>内容</p>
+</div>
+<div class="highlight"><pre><span></span><code>!!! question &quot;标题&quot;
+    内容
+</code></pre></div>
+<div class="admonition question">
+<p class="admonition-title">标题</p>
+<p>内容</p>
+</div>
+<div class="highlight"><pre><span></span><code>!!! warning &quot;标题&quot;
+    内容
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">标题</p>
+<p>内容</p>
+</div>
+<div class="highlight"><pre><span></span><code>!!! danger &quot;标题&quot;
+    内容
+</code></pre></div>
+<div class="admonition danger">
+<p class="admonition-title">标题</p>
+<p>内容</p>
+</div>
+<div class="highlight"><pre><span></span><code>!!! success &quot;标题&quot;
+    内容
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">标题</p>
+<p>内容</p>
+</div>
+<h3 id="_4">按钮<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>[访问我们的Wiki Home](../../index.md){ .md-button }
+</code></pre></div>
+<a class="md-button" href="../../index.html">访问我们的Wiki Home</a></p>
 
 
 

@@ -31,8 +31,8 @@ tags:
 方式2：推荐`pull requests`的直接增删Github仓库，需自行学习git的使用。
 
 ## YAML Front Matter
-只有在`Markdown`文件的头部加入`YAML Front Matter`部分，才能使你写的 Wiki展示在网页上。
-请在你的Wiki文件头部至少加入以下元素
+必须在`Markdown`文件的头部加入`YAML Front Matter`，才能使由`YAML`写的`mkdocs.yml`正确处理该文件。
+请在你的文件头部至少加入以下元素
 
 ### title&author
 示例：
@@ -113,6 +113,25 @@ comments: true
 </p>
 
 
+## 插入视频
+视频的插入也需要借助HTML语言，与文件类似，这里我们推荐使用第三方视频托管服务（如bilibili等）提供的视频链接。示例为 **3Blue1Brown** 中国官方账号视频 **【官方双语】贝叶斯定理的简洁证明**。
+```
+（空行）
+<div style="text-align:center;">
+  <iframe width="720" height="405"  src="//player.bilibili.com/player.html?aid=84799859&bvid=BV1o7411a76m&cid=145676706&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+（空行）
+```
+
+<div style="text-align:center;">
+  <iframe width="752" height="423"  src="//player.bilibili.com/player.html?aid=84799859&bvid=BV1o7411a76m&cid=145676706&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
+## 数学公式
+可以用`Latex`语法插入公式，可以参考[公式手册](https://www.cnblogs.com/1024th/p/11623258.html)。
+由于其语法比较复杂，也可以使用一些在线的公式编辑器。
+还可以使用`Python`的一个库[`latexify-py`](https://github.com/google/latexify_py.git).
+
 ## 其他
 `Markdown`的基础语法不再介绍，本部分介绍几个可能会用到的进阶用法。
 
@@ -144,6 +163,15 @@ comments: true
 !!! tldr "标题"
     内容
 
+此处tldr可以替换成关键词来实现多种提示框，如：
+
+```
+!!! success "标题"
+    内容
+```
+!!! success "标题"
+    内容
+
 ```
 !!! tip "标题"
     内容
@@ -176,13 +204,6 @@ comments: true
     内容
 ```
 !!! danger "标题"
-    内容
-
-```
-!!! success "标题"
-    内容
-```
-!!! success "标题"
     内容
 
 ### 按钮
@@ -190,4 +211,3 @@ comments: true
 [访问我们的Wiki Home](../../index.md){ .md-button }
 ```
 [访问我们的Wiki Home](../../index.md){ .md-button }
-

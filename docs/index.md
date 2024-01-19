@@ -15,8 +15,9 @@ permalink: /
 
 Wiki一些主要内容跳转：
 
-1. [新生入门须知（必读）](./wiki/Beginners/welcome.md)
-2. [相关书籍推荐](./wiki/Recommend/books.md)
+1. [Wiki作者须知](./wiki/Authors/submit_wiki.md)
+2. [新生入门须知（必读）](./wiki/Beginners/welcome.md)
+3. [相关书籍推荐](./wiki/Recommend/books.md)
 
 
 ## 作者须知

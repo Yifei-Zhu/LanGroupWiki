@@ -60,7 +60,7 @@ tags:
 Tags就像文章的Keywords，可以帮助我们有效检索及分类。
 请尽量使用本Wiki已使用的[Tags](wiki/tags.md)，如果希望使用新的Tag，请尽量使用该软件、方法、模块的标准名称（注意大小写）。
 
-###comments
+### comments
 通常情况下请开启评论功能、以便读者可以快速提交反馈或评论。
 ```
 ---
@@ -68,3 +68,11 @@ Tags就像文章的Keywords，可以帮助我们有效检索及分类。
 comments: true
 ---
 ```
+
+
+### PDF下载
+示例：
+```
+[该Wiki的PDF](./downloads/index.pdf)
+```
+[该Wiki的PDF](./downloads/index.pdf)

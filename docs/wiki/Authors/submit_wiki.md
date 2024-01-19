@@ -30,9 +30,6 @@ tags:
 
 方式2：推荐`pull requests`的直接增删Github仓库，需自行学习git的使用。
 
-
-
-
 ## YAML Front Matter
 只有在`Markdown`文件的头部加入`YAML Front Matter`部分，才能使你写的 Wiki展示在网页上。
 请在你的Wiki文件头部至少加入以下元素
@@ -69,11 +66,77 @@ comments: true
 ---
 ```
 
-
-### 文件下载
-我们的文件统一放置在`/docs/downloads`目录下，而Wiki均放在`/wiki/[subdir]`中，因为如想提供文件下载，请将文件路径写成`../../downloads/[filename]`
+## 文件下载
+目前，文件统一放置在`/docs/downloads`目录下，而Wiki均放在`/wiki/[subdir]`中，因为如想提供文件下载，请将文件路径写成`../../downloads/[filename]`
 示例：
 ```
 [Test Wiki的PDF](../../downloads/download_test.pdf)
 ```
 [Test Wiki的PDF](../../downloads/download_test.pdf)
+
+
+由于GitHub仓库容量有限，暂时不推荐直接上传过大的文件，后续我们会通过服务器完善这方面需求。
+目前上传大文件建议通过提供下载链接，如百度云链接(注意，这里的url后直接加上?pwd=提取码，即可自动输入提取码)，示例：
+```
+[下载gview](https://pan.baidu.com/s/1Dczutuc1fMJT5vJX64YB0Q?pwd=5zy3)
+```
+[下载gview](https://pan.baidu.com/s/1Dczutuc1fMJT5vJX64YB0Q?pwd=5zy3)
+
+## 其他
+`Markdown`的基础语法不再介绍，本部分介绍几个好用的扩展用法。
+
+### 提示
+```
+!!! tldr "标题"
+    内容
+```
+!!! tldr "标题"
+    内容
+
+```
+!!! tip "标题"
+    内容
+```
+!!! tip "标题"
+    内容
+```
+!!! info "标题"
+    内容
+```
+!!! info "标题"
+    内容
+
+```
+!!! question "标题"
+    内容
+```
+!!! question "标题"
+    内容
+
+```
+!!! warning "标题"
+    内容
+```
+!!! warning "标题"
+    内容
+
+```
+!!! danger "标题"
+    内容
+```
+!!! danger "标题"
+    内容
+
+```
+!!! success "标题"
+    内容
+```
+!!! success "标题"
+    内容
+
+### 按钮
+```
+[访问我们的Wiki Home](../../index.md){ .md-button }
+```
+[访问我们的Wiki Home](../../index.md){ .md-button }
+

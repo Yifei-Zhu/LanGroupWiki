@@ -124,7 +124,7 @@ comments: true
 ```
 
 <div style="text-align:center;">
-  <iframe width="752" height="423"  src="//player.bilibili.com/player.html?aid=84799859&bvid=BV1o7411a76m&cid=145676706&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+  <iframe width="752" height="423"  src="//player.bilibili.com/player.html?aid=84799859&bvid=BV1o7411a76m&cid=145676706&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 </div>
 
 ## 数学公式

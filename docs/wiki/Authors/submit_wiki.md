@@ -36,7 +36,7 @@ tags:
 
 ### title&author
 示例：
-```
+```YAML
 ---
 title: 作者须知
 author: Yifei Zhu
@@ -46,7 +46,7 @@ author: Yifei Zhu
 ### tags
 请尽量加入tags，如：
 
-```
+```YAML
 ---
 ...
 tags:
@@ -55,11 +55,11 @@ tags:
 ---
 ```
 Tags就像文章的Keywords，可以帮助我们有效检索及分类。
-请尽量使用本Wiki已使用的[Tags](wiki/tags.md)，如果希望使用新的Tag，请尽量使用该软件、方法、模块的标准名称（注意大小写）。
+请尽量使用[本Wiki已使用的Tags](../tags.md)，如果希望使用新的Tag，请尽量使用该软件、方法、模块的标准名称（注意大小写）。
 
 ### comments
 通常情况下请开启评论功能、以便读者可以快速提交反馈或评论。
-```
+```YAML
 ---
 ...
 comments: true
@@ -69,36 +69,37 @@ comments: true
 ## 文件下载
 目前，文件统一放置在`/docs/downloads`目录下，而Wiki均放在`/wiki/[subdir]`中，因为如想提供文件下载，请将文件路径写成`../../downloads/[filename]`
 示例：
-```
+```Markdown
 [Test Wiki的PDF](../../downloads/download_test.pdf)
 ```
 [Test Wiki的PDF](../../downloads/download_test.pdf)
 
 
-由于GitHub仓库容量有限，暂时不推荐直接上传过大的文件，后续我们会通过服务器完善这方面需求。
-目前上传大文件建议通过提供下载链接，如百度云链接(注意，这里的url后直接加上?pwd=提取码，即可自动输入提取码)，示例：
+由于 GitHub 仓库容量有限，暂时不推荐直接上传过大的文件，后续我们会通过服务器完善这方面需求。
+目前上传大文件建议通过提供下载链接，如百度云链接(注意，这里的url后直接加上`?pwd=`提取码，即可自动输入提取码)，示例：
+```Markdown
+[下载gview软件](https://pan.baidu.com/s/1Dczutuc1fMJT5vJX64YB0Q?pwd=5zy3)
 ```
-[下载gview](https://pan.baidu.com/s/1Dczutuc1fMJT5vJX64YB0Q?pwd=5zy3)
-```
-[下载gview](https://pan.baidu.com/s/1Dczutuc1fMJT5vJX64YB0Q?pwd=5zy3)
+[下载gview软件](https://pan.baidu.com/s/1Dczutuc1fMJT5vJX64YB0Q?pwd=5zy3)
 
 
 ## 插入图片
 ### 基本语法
-```
+```HTML
 ![图片描述](图片URL)
 ```
 目前，图片统一放置在`/docs/images`目录下，而Wiki均放在`/wiki/[subdir]`中，因为如想提供文件下载，请将文件路径写成`../../images/[filename]`
 
 此处我们选取经典图片Lenna作为示例：
-```
+```Markdown
 ![Lenna](../../images/lenna.jpg)
 ```
 ![Lenna](../../images/lenna.jpg)
 
 ### 图片居中
-`Markdown`主要是用于简单的文本格式化，但其支持HTML的直接使用，可以使用HTML来实现图片的居中。
-需注意使用HTML区块标签时必须在前后加上空行，以便于内容区分。而且这些元素的开始与结尾标签，不可以用 tab 或是空白来缩进。
+`Markdown`主要是用于简单的文本格式化，但其支持`HTML`的直接使用，可以使用`HTML`来实现图片的居中。
+需注意使用`HTML`区块标签时必须在前后加上空行，以便于内容区分
+而且这些元素的开始与结尾标签，不可以用`tab`或是`space`来缩进。
 
 ```HTML
 （空行）
@@ -114,8 +115,9 @@ comments: true
 
 
 ## 插入视频
-视频的插入也需要借助HTML语言，与文件类似，这里我们推荐使用第三方视频托管服务（如bilibili等）提供的视频链接。示例为 **3Blue1Brown** 中国官方账号视频 **【官方双语】贝叶斯定理的简洁证明**。
-```
+视频的插入也需要借助`HTML`语言，与文件类似，这里我们推荐使用第三方视频托管服务（如bilibili等）提供的视频链接。
+示例为 **3Blue1Brown** 中国官方账号视频 **【官方双语】贝叶斯定理的简洁证明**。
+```HTML
 （空行）
 <div style="text-align:center;">
   <iframe width="720" height="405"  src="//player.bilibili.com/player.html?aid=84799859&bvid=BV1o7411a76m&cid=145676706&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
@@ -137,7 +139,7 @@ comments: true
 
 ### 引用本Wiki章节
 在引用同一Wiki章节（二至六级标题）时，为保证多人共同开发的稳定性，请使用自定义锚点（英文）。定义方式为正常标题后加上`{#custom-anchor}`。示例：
-```
+```HTML
 <!-- 定义 -->
 ## Markdown {#markdown_tutorial}
 <!-- 引用 -->
@@ -146,60 +148,61 @@ comments: true
 [跳转到Markdown章节](#markdown_tutorial)
 
 ### 任务清单
-```
+```Markdown
 （空行）
-- [ ] 未完成任务
 - [x] 已完成任务
+- [ ] 未完成任务
 ```
 
-- [ ] 未完成任务
 - [x] 已完成任务
+- [ ] 未完成任务
 
 ### 提示
-```
+```Markdown
 !!! tldr "标题"
     内容
 ```
 !!! tldr "标题"
     内容
 
-此处tldr可以替换成关键词来实现多种提示框，如：
+此处`tldr`可以替换成关键词来实现多种提示框：
 
-```
+```Markdown
 !!! success "标题"
     内容
 ```
 !!! success "标题"
     内容
 
-```
+```Markdown
 !!! tip "标题"
     内容
 ```
 !!! tip "标题"
     内容
-```
+
+```Markdown
 !!! info "标题"
     内容
 ```
 !!! info "标题"
     内容
 
-```
+```Markdown
 !!! question "标题"
     内容
 ```
 !!! question "标题"
     内容
 
-```
+```Markdown
 !!! warning "标题"
     内容
 ```
 !!! warning "标题"
     内容
 
-```
+```Markdown
 !!! danger "标题"
     内容
 ```
@@ -207,7 +210,8 @@ comments: true
     内容
 
 ### 按钮
-```
+```Markdown
 [访问我们的Wiki Home](../../index.md){ .md-button }
 ```
 [访问我们的Wiki Home](../../index.md){ .md-button }
+

@@ -70,9 +70,10 @@ comments: true
 ```
 
 
-### PDF下载
+### 文件下载
+我们的文件统一放置在`/docs/downloads`目录下，而Wiki均放在`/wiki/[subdir]`中，因为如想提供文件下载，请将文件路径写成`../../downloads/[filename]`
 示例：
 ```
-[该Wiki的PDF](./downloads/index.pdf)
+[Test Wiki的PDF](../../downloads/download_test.pdf)
 ```
-[该Wiki的PDF](./downloads/index.pdf)
+[Test Wiki的PDF](../../downloads/download_test.pdf)

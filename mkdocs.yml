@@ -132,5 +132,7 @@ nav:
         - ./wiki/software_guide/test.md
       - 书籍推荐:
         - ./wiki/Recommend/books.md
-      - Tags: wiki/tags.md
+      - Tags 快速索引: wiki/tags.md
       - 作者须知: wiki/Authors/submit_wiki.md
+      - 资源下载: downloads/download_list.md
+

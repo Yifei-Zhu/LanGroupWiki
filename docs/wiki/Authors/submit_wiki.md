@@ -32,7 +32,7 @@ tags:
 
 ## YAML Front Matter
 必须在`Markdown`文件的头部加入`YAML Front Matter`，才能使由`YAML`写的`mkdocs.yml`正确处理该文件。
-请在你的文件头部至少加入以下元素
+请在你的文件头部至少加入以下元素：
 
 ### title&author
 示例：
@@ -117,6 +117,7 @@ comments: true
 ## 插入视频
 视频的插入也需要借助`HTML`语言，与文件类似，这里我们推荐使用第三方视频托管服务（如bilibili等）提供的视频链接。
 示例为 **3Blue1Brown** 中国官方账号视频 **【官方双语】贝叶斯定理的简洁证明**。
+
 ```HTML
 （空行）
 <div style="text-align:center;">
@@ -135,7 +136,7 @@ comments: true
 还可以使用`Python`的一个库[`latexify-py`](https://github.com/google/latexify_py.git).
 
 ## 其他
-`Markdown`的基础语法不再介绍，本部分介绍几个可能会用到的进阶用法。
+[`Markdown`的基础语法](https://markdown.com.cn/intro.html)不再介绍，本部分介绍几个可能会用到的进阶用法：
 
 ### 引用本Wiki章节
 在引用同一Wiki章节（二至六级标题）时，为保证多人共同开发的稳定性，请使用自定义锚点（英文）。定义方式为正常标题后加上`{#custom-anchor}`。示例：

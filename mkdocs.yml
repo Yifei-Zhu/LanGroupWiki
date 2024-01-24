@@ -128,17 +128,21 @@ extra_javascript:
 nav:
   - Home: index.md
   - Wikis:
-      - 新生入门:
-        - 导览: wiki/Beginners/welcome.md
-      - 软件使用:
-        - ./wiki/software_guide/test.md
-      - 书籍推荐:
-        - ./wiki/Recommend/books.md
-      - Tags 快速索引: wiki/tags.md
       - 作者须知:
         - wiki/Authors/author_note.md
         - wiki/Authors/markdown.md
         - wiki/Authors/submit_wiki.md
+
+      - 新生入门:
+        - 导览: wiki/Beginners/welcome.md
+
+      - 软件使用:
+        - ./wiki/software_guide/test.md
+
+      - 书籍推荐:
+        - ./wiki/Recommend/books.md
+
+      - Tags 快速索引: wiki/tags.md
 
       - 资源下载: downloads/download_list.md
 

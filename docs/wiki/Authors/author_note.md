@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 作者须知
+title: 开始编辑（必读）
 author: Yifei Zhu
 comments: true
 tags:
@@ -53,7 +53,7 @@ tags:
 ---
 ```
 Tags 就像文章的 Keywords ，可以帮助我们有效检索及分类。
-请尽量使用 [本 Wiki 已使用的 Tags ](../tags.md) ，如果希望使用新的 Tag ，请尽量使用该软件、方法、模块的标准名称（注意大小写）。
+请尽量使用 [本 Wiki 已使用的 Tags ](../tags.md) ，如果希望使用新的 Tag ，请尽量使用该软件、方法、模块的标准名称（注意区分大小写）。
 
 ### comments
 通常情况下请开启评论功能、以便读者可以快速提交反馈或评论。
@@ -64,7 +64,7 @@ comments: true
 ---
 ```
 ## 文件下载
-目前，文件统一放置在`/docs/downloads`目录下，而Wiki均放在`/wiki/[subdir]`中，因为如想提供文件下载，请将文件路径写成`../../downloads/[filename]`
+目前，文件统一放置在`/docs/downloads`目录下，而 Wiki 均放在`/wiki/[subdir]`中，因为如想提供文件下载，请将文件路径写成`../../downloads/[filename]`
 示例：
 ```Markdown
 [Test Wiki的PDF](../../downloads/download_test.pdf)
@@ -133,12 +133,13 @@ comments: true
 由于其语法比较复杂，也可以使用一些在线的公式编辑器。
 还可以使用 Python 的一个库 [`latexify-py`](https://github.com/google/latexify_py.git) 。
 
-## 引用本Wiki章节
-在引用同一Wiki章节（二至六级标题）时，为保证多人共同开发的稳定性，请使用自定义锚点（英文）。定义方式为正常标题后加上`{#custom-anchor}`。示例：
+## 引用本 Wiki 章节
+在引用同一 Wiki 章节（二至六级标题）时，为保证多人共同开发的稳定性，请使用自定义锚点（英文）。定义方式为正常标题后加上`{#custom-anchor}`。示例：
 ```HTML
 <!-- 定义 -->
-## 编辑Wiki {#wiki}
+## 编辑 Wiki {#wiki}
 <!-- 引用 -->
-[跳转到Markdown章节]{{#wiki}}
+[跳转到 Markdown 章节]{{#wiki}}
 ```
-[跳转到Markdown章节]({#wiki})
+[跳转到 Markdown 章节]({#wiki})
+

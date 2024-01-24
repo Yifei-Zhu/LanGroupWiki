@@ -15,11 +15,11 @@ permalink: /
 
 Wiki一些主要内容跳转：
 
-1. [Wiki作者须知](./wiki/Authors/submit_wiki.md)
+1. [开始编辑Wiki（必读）](./wiki/Authors/submit_wiki.md)
 2. [新生入门须知（必读）](./wiki/Beginners/welcome.md)
 3. [相关书籍推荐](./wiki/Recommend/books.md)
 
 
 ## 作者须知
-欢迎大家共同丰富本Wiki的相关内容。
-如果是针对已有内容的意见及建议请在对应内容下方评论（需[登录GitHub](https://github.com/login)），如果您想提供本Wiki尚未包含的内容请查看[作者须知](wiki/Authors/submit_wiki.md)。
+欢迎大家共同丰富本 Wik i的相关内容。
+如果是针对已有内容的意见及建议请在对应内容下方评论（需[登录 GitHub ](https://github.com/login)），如果您想提供本 Wiki 尚未包含的内容请查看[开始编辑](wiki/Authors/submit_wiki.md)。

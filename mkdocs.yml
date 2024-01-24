@@ -135,6 +135,10 @@ nav:
       - 书籍推荐:
         - ./wiki/Recommend/books.md
       - Tags 快速索引: wiki/tags.md
-      - 作者须知: wiki/Authors/submit_wiki.md
+      - 作者须知:
+        - wiki/Authors/author_note.md
+        - wiki/Authors/markdown.md
+        - wiki/Authors/submit_wiki.md
+
       - 资源下载: downloads/download_list.md
 

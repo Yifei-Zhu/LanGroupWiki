@@ -1,218 +1,95 @@
 ---
-layout: page
-title: 作者须知
+layout: pagHH
+title: 如何优雅地使用GitHub编辑本Wiki
 author: Yifei Zhu
 comments: true
 tags:
  - 作者须知
 ---
-## Markdown {#markdown_tutorial}
+本文针对于使用 GitHub 参与本 Wiki 项目管理的基本教学，关于 GitHub 及 Git 命令的使用可以参考以下文档：
 
-### 编辑Wiki
-作者须提交`Markdown`文件，文本语法请查看[官方文档](https://markdown.com.cn/intro.html)。
+- [GitHub官方文档](https://docs.github.com/zh)
+- [Nulab Git 教程](https://nulab.com/zh-cn/learn/software-development/git-tutorial/)
 
-在本地编辑`Markdown`文件时，推荐使用[VSCode](https://code.visualstudio.com/)。
-一些推荐的VSCode插件包括：
+由于大家使用的熟练程度不同，所以本 Wiki 项目仓库未对所有人开放权限，而仅将部分人列为协作者（ collaborator ）。
+本文将针对两种情况分别介绍基本使用方法以供快速检索，**但如果你是协作者请认真学习 Git 命令！**
 
-- ***All you need for Markdown:*** 提供了许多实用的功能，如快速预览、表格格式化、自动补全、目录生成等。
-- ***Markdownlint:*** 用于检查和纠正`Markdown`文件中的语法和风格错误。
-- ***Prettier:*** 用于自动格式化`Markdown`文件，使其保持一致的风格。
-- ***Markdown Preview Enhanced:*** 提供了更强大的`Markdown`预览功能，支持数学公式、流程图、时序图等扩展功能。
-- ***Code Spell Checker:*** 用于检查`Markdown`文件中的拼写错误。
-- ***Markdown PDF:*** 将`Markdown`文件转换为 PDF 格式。
+## 普通用户
+### Step1: Fork wiki 文档所在仓库
+首先 fork 我们的 wiki 文档所在的[GitHub仓库](https://github.com/Yifei-Zhu/LanGroupWiki.git)到你的 GitHub 账户下。
 
-大家可以根据自己的情况选择包括不仅限于此的插件辅助编辑。
+此时，可以通过点击 *Upload files* 或拖拽的方式上传编辑好的文件及附件。如果直接通过这种方式提交你的更新，直接跳到 [Step7](#PR) 。
 
-### 上传Wiki
-为方便审核，目前本Wiki推荐方式1。
+!!! tldr "文件路径"
+    - Markdown 文件请放在 wiki 目录下相应模块的子目录中
+    - 图片请放在相应子目录下的`images`路径下
+    - 如需上传供下载的附件请放在`downloads`路径下
 
-方式1：请将编辑好的`Markdown`文件通过邮箱发送到[课题组邮箱](xxxxx)。
 
-方式2：推荐`pull requests`的直接增删Github仓库，需自行学习git的使用。
+### Step2:克隆仓库
+使用 `git clone` 命令克隆你刚 fork 的仓库到本地计算机。
+```bash
+git clone git@github.com:Yifei-Zhu/LanGroupWiki.git
+```
+### Step3:创建新分支
+在本地仓库中，创建一个新分支进行你的更改。
+```bash
+git checkout -b <新分支名称>
+```
+!!! tldr "Note"
+    Step3 也可以跳过，推荐大家规范化在分支进行修改。
 
-## YAML Front Matter
-必须在`Markdown`文件的头部加入`YAML Front Matter`，才能使由`YAML`写的`mkdocs.yml`正确处理该文件。
-请在你的文件头部至少加入以下元素：
-
-### title&author
-示例：
-```YAML
----
-title: 作者须知
-author: Yifei Zhu
----
+### Step4:进行更改并提交
+在新分支上进行必要的更改。
+可以启动一个本地 Web 服务器（默认为`http://127.0.0.1:8000`）实时预览，可以通过`--dev-addr=`选项修改本地开发服务器的地址和端口。
+```bash
+mkdocs serve
+mkdocs serve --dev-addr=<IP地址>:<端口号>
 ```
 
-### tags
-请尽量加入tags，如：
+### Step5: 提交你的修改
+使用 `git add` 和 `git commit` 命令将更改提交到你的分支。
 
-```YAML
----
-...
-tags:
-  - Python
-  - Numpy
----
-```
-Tags就像文章的Keywords，可以帮助我们有效检索及分类。
-请尽量使用[本Wiki已使用的Tags](../tags.md)，如果希望使用新的Tag，请尽量使用该软件、方法、模块的标准名称（注意大小写）。
-
-### comments
-通常情况下请开启评论功能、以便读者可以快速提交反馈或评论。
-```YAML
----
-...
-comments: true
----
+```bash
+git add .
+git commit -m "描述您的更改"
 ```
 
-## 文件下载
-目前，文件统一放置在`/docs/downloads`目录下，而Wiki均放在`/wiki/[subdir]`中，因为如想提供文件下载，请将文件路径写成`../../downloads/[filename]`
-示例：
-```Markdown
-[Test Wiki的PDF](../../downloads/download_test.pdf)
-```
-[Test Wiki的PDF](../../downloads/download_test.pdf)
-
-
-由于 GitHub 仓库容量有限，暂时不推荐直接上传过大的文件，后续我们会通过服务器完善这方面需求。
-目前上传大文件建议通过提供下载链接，如百度云链接(注意，这里的url后直接加上`?pwd=`提取码，即可自动输入提取码)，示例：
-```Markdown
-[下载gview软件](https://pan.baidu.com/s/1Dczutuc1fMJT5vJX64YB0Q?pwd=5zy3)
-```
-[下载gview软件](https://pan.baidu.com/s/1Dczutuc1fMJT5vJX64YB0Q?pwd=5zy3)
-
-
-## 插入图片
-### 基本语法
-```HTML
-![图片描述](图片URL)
-```
-目前，图片统一放置在`/docs/images`目录下，而Wiki均放在`/wiki/[subdir]`中，因为如想提供文件下载，请将文件路径写成`../../images/[filename]`
-
-此处我们选取经典图片Lenna作为示例：
-```Markdown
-![Lenna](../../images/lenna.jpg)
-```
-![Lenna](../../images/lenna.jpg)
-
-### 图片居中
-`Markdown`主要是用于简单的文本格式化，但其支持`HTML`的直接使用，可以使用`HTML`来实现图片的居中。
-需注意使用`HTML`区块标签时必须在前后加上空行，以便于内容区分
-而且这些元素的开始与结尾标签，不可以用`tab`或是`space`来缩进。
-
-```HTML
-（空行）
-<p align="center">
-  <img src="../../images/lenna.jpg" alt="这是一张示例图片">
-</p>
-（空行）
+### Step6:推送到你的 Fork
+使用 `git push` 将更改推送到你的 fork 。
+```bash
+git push origin <新分支名称>
 ```
 
-<p align="center">
-  <img src="../../images/lenna.jpg" alt="这是一张示例图片">
-</p>
+### Step7:发起 Pull Request {#PR}
 
+- 在你的 GitHub 仓库页面上，转到 **Pull requests** 选项卡并点击 **New pull request** 。
+- 选择你刚刚推送的分支，并点击 **Create pull request** 按钮。
+- 填写 **Pull Request** 的标题和描述，然后提交。
 
-## 插入视频
-视频的插入也需要借助`HTML`语言，与文件类似，这里我们推荐使用第三方视频托管服务（如bilibili等）提供的视频链接。
-示例为 **3Blue1Brown** 中国官方账号视频 **【官方双语】贝叶斯定理的简洁证明**。
+## 协作者
+协作者的操作与普通用户有一些区别。大概流程如下：
+### Step1:克隆仓库：
+克隆仓库到本地环境，并切换到 **master** 分支。
 
-```HTML
-（空行）
-<div style="text-align:center;">
-  <iframe width="720" height="405"  src="//player.bilibili.com/player.html?aid=84799859&bvid=BV1o7411a76m&cid=145676706&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-</div>
-（空行）
+### Step2：进行更改并本地测试
+
+### Step3：提交和推送更改：
+使用 Git 命令（`git add`、`git commit` 和 `git push`）将更改提交并推送到远程仓库。
+!!! tldr "Note"
+    当你发布一个新的版本时，推荐使用 `git tag` 命令为该版本创建标签并添加说明。
+
+```bash
+git add .
+git commit -m "描述您的更改"
+git tag <标签名称>
+git tag -a <标签名称> -m "标签信息"
+git push origin <标签名称>
 ```
 
-<div style="text-align:center;">
-  <iframe width="752" height="423"  src="//player.bilibili.com/player.html?aid=84799859&bvid=BV1o7411a76m&cid=145676706&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-</div>
-
-## 数学公式
-可以用`Latex`语法插入公式，可以参考[公式手册](https://www.cnblogs.com/1024th/p/11623258.html)。
-由于其语法比较复杂，也可以使用一些在线的公式编辑器。
-还可以使用`Python`的一个库[`latexify-py`](https://github.com/google/latexify_py.git).
-
-## 其他
-[`Markdown`的基础语法](https://markdown.com.cn/intro.html)不再介绍，本部分介绍几个可能会用到的进阶用法：
-
-### 引用本Wiki章节
-在引用同一Wiki章节（二至六级标题）时，为保证多人共同开发的稳定性，请使用自定义锚点（英文）。定义方式为正常标题后加上`{#custom-anchor}`。示例：
-```HTML
-<!-- 定义 -->
-## Markdown {#markdown_tutorial}
-<!-- 引用 -->
-[跳转到Markdown章节]{#markdown_tutorial}
+### *Step4：部署到 GitHub Pages
+可以运行 `mkdocs gh-deploy`。这个命令会自动构建网站，并将生成的文件推送到 **gh-pages** 分支。
+```bash
+mkdocs gh-deploy
 ```
-[跳转到Markdown章节](#markdown_tutorial)
-
-### 任务清单
-```Markdown
-（空行）
-- [x] 已完成任务
-- [ ] 未完成任务
-```
-
-- [x] 已完成任务
-- [ ] 未完成任务
-
-### 提示
-```Markdown
-!!! tldr "标题"
-    内容
-```
-!!! tldr "标题"
-    内容
-
-此处`tldr`可以替换成关键词来实现多种提示框：
-
-```Markdown
-!!! success "标题"
-    内容
-```
-!!! success "标题"
-    内容
-
-```Markdown
-!!! tip "标题"
-    内容
-```
-!!! tip "标题"
-    内容
-
-```Markdown
-!!! info "标题"
-    内容
-```
-!!! info "标题"
-    内容
-
-```Markdown
-!!! question "标题"
-    内容
-```
-!!! question "标题"
-    内容
-
-```Markdown
-!!! warning "标题"
-    内容
-```
-!!! warning "标题"
-    内容
-
-```Markdown
-!!! danger "标题"
-    内容
-```
-!!! danger "标题"
-    内容
-
-### 按钮
-```Markdown
-[访问我们的Wiki Home](../../index.md){ .md-button }
-```
-[访问我们的Wiki Home](../../index.md){ .md-button }
 

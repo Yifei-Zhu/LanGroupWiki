@@ -1050,9 +1050,9 @@
   <h1>批量计算二面角/键角/键长代码的使用</h1>
 
 <h2 id="1">1. 代码简介<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
-<p>​   代码定义了一个Atom类，在类的实例化时传入原子编号。调用<code>cal()</code>函数可以根据原子编号的数量，批量计算二面角/键角/键长。<code>cal()</code>默认计算脚本目录下所有的.log文件，如果需要计算特定的文件，请在括号内输入文件名。</p>
+<p>代码定义了一个Atom类，在类的实例化时传入原子编号。调用<code>cal()</code>函数可以根据原子编号的数量，批量计算二面角/键角/键长。<code>cal()</code>默认计算脚本目录下所有的 <strong>Gaussian16</strong> 输出文件（.log），如果需要计算特定的文件，请在<code>cal()</code>传入文件名。</p>
 <h2 id="2">2. 使用示例<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
-<p>​   将.py文件和存有原子数据的.log文本放在同一目录下。</p>
+<p>将 .py 文件和存有原子数据的 .log 文本放在同一目录下。</p>
 <h3 id="21">2.1 二面角的计算<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
 <p>​   在类的实例化时，传入四个参数。注意中间两个原子为面的交线。</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
@@ -1070,24 +1070,24 @@
 <span class="sd">&quot;&quot;&quot;</span>
 </code></pre></div>
 <p>计算特定某几个文件：</p>
-<div class="highlight"><pre><span></span><code>a = Atom(9, 8, 13, 14)  # 实例化
-a1 = a.cal(&#39;10.log&#39;,&#39;11.log&#39;)
-&quot;&quot;&quot; &gt;&gt;&gt;
-文件10.log中，(9, 8, 13, 14)号原子形成的二面角是：180.00
-文件11.log中，(9, 8, 13, 14)号原子形成的二面角是：170.00
-&quot;&quot;&quot;
-</code></pre></div>
-<p>控制保留小数位数，使用decimal参数（默认保留两位小数）：</p>
 <div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="n">Atom</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>  <span class="c1"># 实例化</span>
-<span class="n">a1</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">cal</span><span class="p">(</span><span class="s1">&#39;10.log&#39;</span><span class="p">,</span><span class="n">decimal</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">a1</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">cal</span><span class="p">(</span><span class="s1">&#39;10.log&#39;</span><span class="p">,</span><span class="s1">&#39;11.log&#39;</span><span class="p">)</span>
+<span class="sd">&quot;&quot;&quot; &gt;&gt;&gt;</span>
+<span class="sd">文件10.log中，(9, 8, 13, 14)号原子形成的二面角是：180.00</span>
+<span class="sd">文件11.log中，(9, 8, 13, 14)号原子形成的二面角是：170.00</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</code></pre></div>
+<p>控制保留小数位数，使用 <code>decimal</code> 参数（默认保留两位小数）：</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="n">Atom</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>  <span class="c1"># 实例化</span>
+<span class="n">a1</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">cal</span><span class="p">(</span><span class="s1">&#39;10.log&#39;</span><span class="p">,</span> <span class="n">decimal</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="sd">&quot;&quot;&quot; &gt;&gt;&gt;</span>
 <span class="sd">文件10.log中，(9, 8, 13, 14)号原子形成的二面角是：179.99520</span>
 <span class="sd">&quot;&quot;&quot;</span>
 </code></pre></div>
 <h3 id="22">2.2 键角的计算<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
-<p>只需要在类的实例化时传入三个参数即可。注意第二个原子为顶角。</p>
+<p>只需要在类的实例化时传入三个参数即可，<strong>注意第二个原子为顶角</strong>。</p>
 <div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="n">Atom</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">)</span>  <span class="c1"># 实例化</span>
-<span class="n">a1</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">cal</span><span class="p">(</span><span class="s1">&#39;10.log&#39;</span><span class="p">,</span><span class="n">decimal</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">a1</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">cal</span><span class="p">(</span><span class="s1">&#39;10.log&#39;</span><span class="p">,</span> <span class="n">decimal</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="sd">&quot;&quot;&quot; &gt;&gt;&gt;</span>
 <span class="sd">文件10.log中，(9, 8, 13)号原子形成的键角是：27.06505</span>
 <span class="sd">&quot;&quot;&quot;</span>
@@ -1097,8 +1097,8 @@ a1 = a.cal(&#39;10.log&#39;,&#39;11.log&#39;)
 <h2 id="3">3. 可能出现的问题<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <p><strong>1 结果得出的二面角与我想要的二面角互补？</strong></p>
 <p>注意实例化时四个原子编号的顺序。对于（1，2，3，4）中，求的是123平面和234平面的二面角。</p>
-<p><strong>2 如何把结果导入到csv或其他文本中？</strong></p>
-<p>还未完成。自己写一个脚本去吧。</p>
+<p><strong>2 如何把结果导入到 csv 或其他文本中？</strong></p>
+<p>还未完成，自己写一个脚本去吧。</p>
 <h2 id="4">4. 源码<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/python3</span>
 <span class="kn">import</span> <span class="nn">math</span>

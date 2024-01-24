@@ -1,6 +1,6 @@
 ---
 layout: pagHH
-title: 如何优雅地使用GitHub编辑本Wiki
+title: 优雅地使用GitHub参与Wiki协作
 author: Yifei Zhu
 comments: true
 tags:

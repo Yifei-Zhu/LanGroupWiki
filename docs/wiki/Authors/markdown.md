@@ -8,7 +8,7 @@ tags:
 ---
 
 ## 其他
-[`Markdown`的基础语法](https://markdown.com.cn/intro.html)在这里不做全面介绍，本部分着重介绍一些我们常用的语法。
+[ Markdown 的基础语法](https://markdown.com.cn/intro.html)在这里不做全面介绍，本部分着重介绍一些我们常用的语法。
 
 ### 任务清单
 ```Markdown

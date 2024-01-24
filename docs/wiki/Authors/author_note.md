@@ -9,8 +9,8 @@ tags:
 ## 编辑Wiki {#wiki}
 作者须提交 Markdown 文件，文本语法请查看[官方文档](https://markdown.com.cn/intro.html)。
 
-在本地编辑 Markdown 文件时，推荐使用[VSCode](https://code.visualstudio.com/)。
-一些推荐的VSCode插件包括：
+在本地编辑 Markdown 文件时，推荐使用 [VSCode](https://code.visualstudio.com/) 。
+一些推荐的 VSCode 插件包括：
 
 - ***All you need for Markdown:*** 提供了许多实用的功能，如快速预览、表格格式化、自动补全、目录生成等。
 - ***Markdownlint:*** 用于检查和纠正 Markdown 文件中的语法和风格错误。
@@ -21,18 +21,18 @@ tags:
 
 大家可以根据自己的情况选择包括不仅限于此的插件辅助编辑。
 HH
-## 上传WikHH
+## 上传Wiki
 为方便审核，目前本Wiki推荐方式1。
 
 方式1：请将编辑好的 Markdown 文件通过邮箱发送到[课题组邮箱](mailto:zhuyifei.phil@gmail.com)。
 
-方式2：使用`pull requests`的直接操作GitHub仓库，需自行学习Git的使用，可以参见[如何优雅地使用GitHub编辑本Wiki](./submit_wiki.md)。
+方式2：使用 **pull requests** 的直接操作GitHub仓库，需自行学习Git的使用，可以参见[优雅地使用GitHub参与Wiki协作](./submit_wiki.md)。
 
 ## YAML Front Matter
-必须在 Markdown 文件的头部加入`YAML Front Matter`，才能使由`YAML`写的`mkdocs.yml`正确处理该文件。
+必须在 Markdown 文件的头部加入 **YAML Front Matter** ，才能使由 YAML 写的 `mkdocs.yml` 正确处理该文件。
 请在你的文件头部至少加入以下元素：
 
-### title&author
+### title & author
 示例：
 ```YAML
 ---
@@ -42,7 +42,7 @@ author: Yifei Zhu
 ```
 
 ### tags
-请尽量加入tags，如：
+请尽量加入 tags ，如：
 
 ```YAML
 ---
@@ -52,8 +52,8 @@ tags:
   - Numpy
 ---
 ```
-Tags就像文章的Keywords，可以帮助我们有效检索及分类。
-请尽量使用[本Wiki已使用的Tags](../tags.md)，如果希望使用新的Tag，请尽量使用该软件、方法、模块的标准名称（注意大小写）。
+Tags 就像文章的 Keywords ，可以帮助我们有效检索及分类。
+请尽量使用 [本 Wiki 已使用的 Tags ](../tags.md) ，如果希望使用新的 Tag ，请尽量使用该软件、方法、模块的标准名称（注意大小写）。
 
 ### comments
 通常情况下请开启评论功能、以便读者可以快速提交反馈或评论。
@@ -75,9 +75,9 @@ comments: true
 由于 GitHub 仓库容量有限，暂时不推荐直接上传过大的文件，后续我们会通过服务器完善这方面需求。
 目前上传大文件建议通过提供下载链接，如百度云链接(注意，这里的url后直接加上`?pwd=`提取码，即可自动输入提取码)，示例：
 ```Markdown
-[下载gview软件](https://pan.baidu.com/s/1Dczutuc1fMJT5vJX64YB0Q?pwd=5zy3)
+[下载 gview 软件](https://pan.baidu.com/s/1Dczutuc1fMJT5vJX64YB0Q?pwd=5zy3)
 ```
-[下载gview软件](https://pan.baidu.com/s/1Dczutuc1fMJT5vJX64YB0Q?pwd=5zy3)
+[下载 gview 软件](https://pan.baidu.com/s/1Dczutuc1fMJT5vJX64YB0Q?pwd=5zy3)
 
 
 ## 插入图片
@@ -94,8 +94,8 @@ comments: true
 ![Lenna](./images/lenna.jpg)
 
 ### 图片居中
- Markdown 主要是用于简单的文本格式化，但其支持`HTML`的直接使用，可以使用`HTML`来实现图片的居中。
-需注意使用`HTML`区块标签时必须在前后加上空行，以便于内容区分
+ Markdown 主要是用于简单的文本格式化，但其支持 HTML 的直接使用，可以使用 HTML 来实现图片的居中。
+需注意使用 HTML 区块标签时必须在前后加上空行，以便于内容区分
 而且这些元素的开始与结尾标签，不可以用`tab`或是`space`来缩进。
 
 ```HTML
@@ -112,7 +112,8 @@ comments: true
 
 
 ## 插入视频
-视频的插入也需要借助`HTML`语言，与文件类似，这里我们推荐使用第三方视频托管服务（如bilibili等）提供的视频链接。
+视频的插入也需要借助 HTML 语言。
+这里我们推荐使用第三方视频托管服务（如 bilibili 等）提供的视频链接。
 示例为 **3Blue1Brown** 中国官方账号视频 **【官方双语】贝叶斯定理的简洁证明**。
 
 ```HTML
@@ -128,10 +129,9 @@ comments: true
 </div>
 
 ## 数学公式
-可以用`Latex`语法插入公式，可以参考[公式手册](https://www.cnblogs.com/1024th/p/11623258.html)。
+可以用 Latex 语法插入公式，可以参考[公式手册](https://www.cnblogs.com/1024th/p/11623258.html)。
 由于其语法比较复杂，也可以使用一些在线的公式编辑器。
-还可以使用`Python`的一个库[`latexify-py`](https://github.com/google/latexify_py.git).
-
+还可以使用 Python 的一个库 [`latexify-py`](https://github.com/google/latexify_py.git) 。
 
 ## 引用本Wiki章节
 在引用同一Wiki章节（二至六级标题）时，为保证多人共同开发的稳定性，请使用自定义锚点（英文）。定义方式为正常标题后加上`{#custom-anchor}`。示例：

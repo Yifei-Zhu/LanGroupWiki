@@ -1,14 +1,15 @@
 site_name: Lan Group Wiki (SCNU)
 site_url: https://yifei-zhu.github.io/LanGroupWiki/
 repo_name: LanGroupWiki
-repo_url: https://github.com/Yifei-Zhu/LanGroupWiki.git
+repo_url: https://gitee.com/LanGroup/LanGroupWiki.git
+# https://github.com/Yifei-Zhu/LanGroupWiki.git
 extra:
   social:
 #     - icon: material/web
 #       link: xxxxx
 #       name: 课题组网站
 #     - icon: fontawesome/brands/github
-#       link: https://github.com/chenggroup
+#       link: https://github.com/xxxxx
 #       name: 课题组Github
     - icon: fontawesome/solid/paper-plane
       link: mailto:zhenggang.lan@m.scnu.edu.cn
@@ -32,7 +33,8 @@ theme:
   name: material
   custom_dir: overrides
   icon:
-    repo: fontawesome/brands/github
+    repo: simple/gitee
+    # fontawesome/brands/github
   palette:
     - scheme: default
       primary: indigo

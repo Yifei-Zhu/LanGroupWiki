@@ -1,5 +1,5 @@
 ---
-layout: pagHH
+layout: page
 title: 优雅地使用GitHub参与Wiki协作
 author: Yifei Zhu
 comments: true
@@ -26,6 +26,10 @@ tags:
     - 图片请放在相应子目录下的`images`路径下
     - 如需上传供下载的附件请放在`downloads`路径下
 
+!!! error "文件路径"
+    - Markdown 文件请放在 wiki 目录下相应模块的子目录中
+    - 图片请放在相应子目录下的`images`路径下
+    - 如需上传供下载的附件请放在`downloads`路径下
 
 ### Step2:克隆仓库
 使用 `git clone` 命令克隆你刚 fork 的仓库到本地计算机。
@@ -42,6 +46,14 @@ git checkout -b <新分支名称>
 
 ### Step4:进行更改并提交
 在新分支上进行必要的更改。
+注意，如果增删内容，请在`mkdocs.yml`做对应修改，比如你希望在 **软件使用** 模块新增一个关于 Gaussian 程序使用的说明，将 *Gaussian_guide.md* 文件置于 *./wiki/Software_guide* 目录下后，你需要在`mkdocs.yml` **软件使用** 下增加该文件路径（注意缩进以及以 - 开头），比如：
+```YAML
+- 软件使用:
+    ......（其他文件路径）
+    - ./wiki/Software_guide/Gaussian_guide.md
+    ......（其他文件路径）
+```
+
 可以启动一个本地 Web 服务器（默认为`http://127.0.0.1:8000`）实时预览，可以通过`--dev-addr=`选项修改本地开发服务器的地址和端口。
 ```bash
 mkdocs serve
@@ -69,7 +81,7 @@ git push origin <新分支名称>
 - 填写 **Pull Request** 的标题和描述，然后提交。
 
 ## 协作者
-协作者的操作与普通用户有一些区别。大概流程如下：
+协作者因为有修改原仓库的权限，因此不需要 **Pull Request** 。大概流程如下：
 ### Step1:克隆仓库：
 克隆仓库到本地环境，并切换到 **master** 分支。
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: testcomments
+title: Gaussian 入门
 author: Yifei Zhu
 comments: true
 ---

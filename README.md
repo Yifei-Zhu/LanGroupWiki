@@ -1,9 +1,6 @@
 # LanGroupWiki
 
 #### 介绍
-LanGroup Wiki
-
-#### 软件架构
 Lan Group Wiki, created by material-for-mkdocs.
 'Comment' supported by giscus.
 

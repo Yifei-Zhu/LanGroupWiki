@@ -9,6 +9,9 @@ tags:
 ## 编辑Wiki {#wiki}
 作者须提交 Markdown 文件，文本语法请查看[官方文档](https://markdown.com.cn/intro.html)。
 
+!!! tldr "Markdown 文件命名"
+    为了方便管理以及 URL 编码时中文路径会十分复杂，请将 Wiki 命名为如下格式：`[英文姓名]_[英文文档名].md`，比如卢璟泽`批量计算二面角键角键长代码的使用.md`应改为类似于`lujz_internal_coordinate.md`。
+
 在本地编辑 Markdown 文件时，推荐使用 [VSCode](https://code.visualstudio.com/) 。
 一些推荐的 VSCode 插件包括：
 

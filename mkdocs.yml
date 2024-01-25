@@ -140,7 +140,7 @@ nav:
         - ./wiki/Software_guide/test.md
 
       - 代码分享:
-        - ./wiki/Codes/批量计算二面角键角键长代码的使用.md
+        - ./wiki/Codes/lujz_internal_coordinate.md
 
       - 资料推荐:
         - ./wiki/Recommend/books.md

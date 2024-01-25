@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 优雅地使用GitHub参与Wiki协作
+title: 优雅地使用 gitee/GitHub 参与 Wiki 协作
 author: Yifei Zhu
 comments: true
 tags:

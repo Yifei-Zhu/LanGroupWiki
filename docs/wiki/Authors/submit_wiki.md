@@ -13,12 +13,16 @@ tags:
 - [GitHub 官方文档](https://docs.github.com/zh)
 - [Nulab Git 教程](https://nulab.com/zh-cn/learn/software-development/git-tutorial/)
 
+两个平台使用方法基本上没有区别，相互间也很容易实现镜像同步。
+原则上可以根据个人喜好选择，~~但如果不科学上网的话 GitHub 的使用会有问题。~~
+本 wiki 文档所在仓库托管在 Gitee 平台，因此推荐使用 Gitee 平台，**本文针对 Gitee 平台情况进行说明**。
+
 由于大家使用的熟练程度不同，所以本 Wiki 项目仓库未对所有人开放权限，而仅将部分人列为协作者（ collaborator ）。
 本文将针对两种情况分别介绍基本使用方法以供快速检索，**但如果你是协作者请认真学习 Git 命令！**
 
 ## 普通用户
 ### Step1: Fork wiki 文档所在仓库
-首先 fork 我们的 wiki 文档所在的 [GitHub 仓库](https://github.com/Yifei-Zhu/LanGroupWiki.git)到你的 GitHub 账户下。
+首先 fork 我们的 wiki 文档所在的 [Gitee 仓库](https://gitee.com/LanGroup/LanGroupWiki.git)到你的 Gitee 账户下。
 
 此时，可以通过点击 *Upload files* 或拖拽的方式上传编辑好的文件及附件。如果直接通过这种方式提交你的更新，直接跳到 [Step7](#PR) 。
 
@@ -86,14 +90,13 @@ git push origin <新分支名称>
 
 ### Step7:发起 Pull Request {#PR}
 
-- 在你的 GitHub 仓库页面上，转到 **Pull requests** 选项卡并点击 **New pull request** 。
+- 在你的 Gitee 仓库页面上，转到 **Pull requests** 选项卡并点击 **New pull request** 。
 - 选择你刚刚推送的分支，并点击 **Create pull request** 按钮。
 - 填写 **Pull Request** 的标题和描述，然后提交。
 
 ## 协作者
 协作者因为有修改原仓库的权限，因此不需要 **Pull Request** 。大概流程如下：
-### Step1:克隆仓库：
-克隆仓库到本地环境，并切换到 **master** 分支。
+### Step1:克隆仓库
 
 ### Step2：进行更改并本地测试
 
@@ -110,7 +113,7 @@ git tag -a <标签名称> -m "标签信息"
 git push origin <标签名称>
 ```
 
-### *Step4：部署到 GitHub Pages
+### *Step4：部署到 Gitee/GitHub Pages
 可以运行`mkdocs gh-deploy`。这个命令会自动构建网站，并将生成的文件推送到 **gh-pages** 分支。
 ```bash
 mkdocs gh-deploy

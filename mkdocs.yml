@@ -2,15 +2,11 @@ site_name: Lan Group Wiki (SCNU)
 site_url: https://yifei-zhu.github.io/LanGroupWiki/
 repo_name: LanGroupWiki
 repo_url: https://gitee.com/LanGroup/LanGroupWiki.git
-# https://github.com/Yifei-Zhu/LanGroupWiki.git
 extra:
   social:
-#     - icon: material/web
-#       link: xxxxx
-#       name: 课题组网站
-#     - icon: fontawesome/brands/github
-#       link: https://github.com/xxxxx
-#       name: 课题组Github
+    - icon: material/web
+      link: xxxxx
+      name: 课题组网站
     - icon: fontawesome/solid/paper-plane
       link: mailto:zhenggang.lan@m.scnu.edu.cn
       name: 联系兰峥岗老师
@@ -18,6 +14,9 @@ extra:
     - icon: fontawesome/solid/gear
       link: mailto:zhuyifei.phil@gmail.com
       name: 联系Wiki运营
+    - icon: fontawesome/brands/github
+      link: https://github.com/Yifei-Zhu/LanGroupWiki.git
+      name: 本Wiki所在Github仓库
   # consent:
   #   title: Cookie consent
   #   description: >-

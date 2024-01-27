@@ -3,9 +3,7 @@ layout: page
 title: 优雅地使用 Gitee/GitHub 参与 Wiki 协作
 author: Yifei Zhu
 comments: true
-tags:
- - 作者须知
- - Git
+
 ---
 本文针对于使用 Gitee 或 GitHub 参与本 Wiki 项目管理的基本教学，关于 Gitee 或 GitHub 及 Git 命令的使用可以参考以下文档：
 

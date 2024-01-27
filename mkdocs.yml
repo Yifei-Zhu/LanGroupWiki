@@ -6,17 +6,20 @@ extra:
   social:
     - icon: material/web
       link: xxxxx
-      name: 课题组网站
+      name: Group Website
     - icon: fontawesome/solid/paper-plane
       link: mailto:zhenggang.lan@m.scnu.edu.cn
-      name: 联系兰峥岗老师
+      name: Contact Prof. Zhenggang Lan
     # - icon: fontawesome/solid/plane-departure
     - icon: fontawesome/solid/gear
       link: mailto:zhuyifei.phil@gmail.com
-      name: 联系Wiki运营
+      name: Contact Wiki Administrator
+    - icon: simple/gitee
+      link:  https://gitee.com/LanGroup/LanGroupWiki.git
+      name: Gitee repository
     - icon: fontawesome/brands/github
       link: https://github.com/Yifei-Zhu/LanGroupWiki.git
-      name: 本Wiki所在Github仓库
+      name: GitHub repository
   # consent:
   #   title: Cookie consent
   #   description: >-
@@ -51,7 +54,8 @@ theme:
         # name: Switch to light mode
         name: 切换至浅色模式
 
-  language: zh
+  # language: zh
+  language: en
   features:
     - header.autohide
     - navigation.instant
@@ -59,7 +63,7 @@ theme:
     # - navigation.tabs.sticky
     - navigation.path
     - navigation.sections
-    - navigation.expand
+    # - navigation.expand
     - navigation.indexes
     - navigation.top
     - content.tooltips
@@ -129,24 +133,25 @@ extra_javascript:
 nav:
   - Home: index.md
   - Wikis:
-      - 作者须知:
-        - wiki/Authors/author_note.md
-        - wiki/Authors/markdown.md
-        - wiki/Authors/submit_wiki.md
+      - Author Guidelines:
+        - wiki/Authors/author_note_en.md
+        - wiki/Authors/markdown_en.md
+        - wiki/Authors/submit_wiki_en.md
+        - wiki/Authors/python_standard_en.md
 
-      - 新生入门:
-        - 导览: wiki/Beginners/welcome.md
+      - Newcomer Guide:
+        - Navigation: wiki/Beginners/welcome.md
 
-      - 软件使用:
+      - Software Usage:
         - ./wiki/Software_guide/test.md
 
-      - 代码分享:
+      - Code Sharing:
         - ./wiki/Codes/lujz_internal_coordinate.md
 
-      - 资料推荐:
+      - Recommended Resources:
         - ./wiki/Recommend/books.md
 
-      - Tags 快速索引: wiki/tags.md
+      - Tags Quick Index: wiki/tags.md
 
-      - 资源下载: downloads/download_list.md
+      - Resource Download: downloads/download_list.md
 

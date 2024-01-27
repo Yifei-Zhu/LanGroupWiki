@@ -1,25 +1,21 @@
 ---
 layout: page
-title: 首页
+title: Home
 permalink: /
 ---
-# 兰峥岗课题组Wiki（LanGroupWiki）
+# LanGroupWiki
 
-欢迎来到华南师范大学兰峥岗课题组的组内wiki。
+Welcome to the Wiki of the Prof. Zhenggang Lan's group at South China Normal University.
 <!-- 欢迎访问课题组网站（xxxxx）以获取更多信息。 -->
-如果有问题及建议请在对应帖子下方留言评论，或联系兰峥岗老师 [zhenggang.lan@m.scnu.edu.cn](mailto:zhenggang.lan@m.scnu.edu.cn)
-
-## Wiki介绍
-
-本Wiki致力于存储及传播包括不仅限于计算化学领域的知识、技术、方法。欢迎大家共同交流、一起提高。
-
-Wiki一些主要内容跳转：
-
-1. [开始编辑Wiki（必读）](./wiki/Authors/submit_wiki.md)
-2. [新生入门须知（必读）](./wiki/Beginners/welcome.md)
-3. [相关书籍推荐](./wiki/Recommend/books.md)
+If you have any questions or suggestions, please leave a comment below the corresponding post ([need to log in to GitHub](https://github.com/login)), or contact Prof. Zhenggang Lan via [zhenggang.lan@m.scnu.edu.cn](mailto:zhenggang.lan@m.scnu.edu.cn).
 
 
-## 作者须知
-欢迎大家共同丰富本 Wik i的相关内容。
-如果是针对已有内容的意见及建议请在对应内容下方评论（需[登录 GitHub ](https://github.com/login)），如果您想提供本 Wiki 尚未包含的内容请查看[开始编辑](wiki/Authors/submit_wiki.md)。
+## Introduction
+
+This Wiki is dedicated to storing and disseminating knowledge, techniques, and methods in various fields, including but not limited to computational chemistry.
+Everyone is welcome to collaborate and improve together, please refer to *[How to start?](./wiki/Authors/submit_wiki_en.md)*.
+
+<!-- ## Jumping to some main content
+1. [How to start?](./wiki/Authors/submit_wiki_en.md) -->
+
+

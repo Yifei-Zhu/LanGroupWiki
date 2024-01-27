@@ -3,8 +3,6 @@ layout: page
 title: 开始编辑（必读）
 author: Yifei Zhu
 comments: true
-tags:
- - 作者须知
 ---
 ## 编辑Wiki {#wiki}
 作者须提交 Markdown 文件，文本语法请查看[官方文档](https://markdown.com.cn/intro.html)。
@@ -148,4 +146,4 @@ Markdown 主要是用于简单的文本格式化，但其支持 HTML 的直接�
 
 ## 其他注意事项
   - Wiki 中涉及的 **使用的软件、调用的库** 等请注明版本，如不标注，默认为最新版本。
-  - Wiki 内容请 **规范书写**，包括上传的代码等请遵循相应的书写规则，比如 Python 代码需要遵循[PEP8规范](https://peps.python.org/pep-0008/)。
+  - Wiki 内容请 **规范书写**，包括上传的代码等请遵循相应的书写规则，如果你不清楚如何规范书写，可以参考我们提供的示例或指南，比如[如何规范书写 Python 代码](./python_standard.md)。

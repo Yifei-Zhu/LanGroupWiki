@@ -146,7 +146,7 @@ For example, we wish to insert the **【官方双语】贝叶斯定理的简洁�
 ## Mathematical Formula
 Formula can be inserted using LaTex syntax, please refer to [Formula Handbook](https://www.cnblogs.com/1024th/p/11623258.html).
 
-Some Python libraries ([`latexify-py`](https://github.com/google/latexify_py.git), [handcalcs](https://github.com/connorferster/handcalcs.git), etc.) may be helpful due to the complex syntax of editting formula in LaTex.
+Some Python libraries ([`latexify-py`](https://github.com/google/latexify_py.git), [handcalcs](https://github.com/connorferster/handcalcs.git), etc.) may be helpful due to the complex syntax of editing formula in LaTex.
 
 ## Citing a Section in the Same Wiki
 While citing a subsection (second to sixth level headings) in the same Wiki Markdown file, please use **custom anchor** to ensure the stability in collaborative development.
@@ -161,5 +161,5 @@ You can directly add `{#custom-anchor}` after the normal title:
 [Jump the "Editing Wiki" section](#wiki)
 
 ## Additional Notes
-  - Please specify the versions of software used, libraries called, etc. If not indicated, it is assumed to be the lastest version.
+  - Please specify the versions of software used, libraries called, etc. If not indicated, it is assumed to be the latest version.
   - All the contents related to the Wiki (including uploaded codes) should be written in a standardized manner. If you are unsure about how to write in a standardized manner, you can refer to the examples or guidelines we provide. For example, *[How to Write Python Code in a Standardized Manner?](./python_standard_en.md)*

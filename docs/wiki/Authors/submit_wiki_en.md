@@ -22,10 +22,10 @@ This article provides instructions specific to the Gitee platform.
 
 Due to varying levels of proficiency among users, the permissions of our repository are not entirely opened to everyone.
 Instead, only a few individuals are designated as *Administrators*.
-Here, we provide an introduction to basic usage methods for both *Administrator* and *Commen User* for quick reference.
+Here, we provide an introduction to basic usage methods for both *Administrator* and *Common User* for quick reference.
 **However, if you are designated as a *Administrator*, please take the time to systematically study Git commands.**
 
-## Commen User
+## Common User
 ### Step1: Fork the repository of this Wiki
 First of all, you should fork the [Gitee repository](https://gitee.com/LanGroup/LanGroupWiki.git) where our wiki documentations are located to your Gitee account.
 
@@ -48,22 +48,22 @@ Clone the repository that you already forked to your local machine using the `gi
 ```bash
 git clone git@github.com:Yifei-Zhu/LanGroupWiki.git
 ```
-The `git clone` command automatically adds the remote repository (by dafultly named as **origin** ).
+The `git clone` command automatically adds the remote repository (by default named as **origin** ).
 
 ### Step3: Create new branch
-In the local repository, creat a new branch for your changes using `git checkout` command.
+In the local repository, create a new branch for your changes using `git checkout` command.
 ```bash
 git checkout -b <New branch>
 ```
 !!! tldr "Note"
-    The Step3 is not mandatory and can be skipped, but it is recommanded that everyone follows best practices by making changes in branches to ensure the stability of the `master` branch.
+    The Step3 is not mandatory and can be skipped, but it is recommended that everyone follows best practices by making changes in branches to ensure the stability of the `master` branch.
 
 ### Step4: Make changes
 If your changes are not limited to the existing files,  but rather adding or deleting certain content, please make corresponding modifications in `mkdocs. yml` file.
 
 For example, if you wish add a wiki about the instruction of Gaussian software in **Software Usage** module, you should place the *Gaussian_guide.md* file under *./wiki/Software_guide* directory.
 Then, you need to add the relative path of this file by modifying the **Software Usage** section in the `mkdocs.yml` file.
-Note that this path should be started with - and follow specifc indentation, as shown below:
+Note that this path should be started with - and follow specific indentation, as shown below:
 ```YAML
 - Software Usage:
     ......（Other file paths）

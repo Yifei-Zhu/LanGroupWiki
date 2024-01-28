@@ -146,7 +146,7 @@ For example, we wish to insert the **【官方双语】贝叶斯定理的简洁�
 ## Mathematical Formula
 Formula can be inserted using LaTex syntax, please refer to [Formula Handbook](https://www.cnblogs.com/1024th/p/11623258.html).
 
-A Python library [`latexify-py`](https://github.com/google/latexify_py.git) may be helpful due to the complex syntax of editting formula in LaTex.
+Some Python libraries ([`latexify-py`](https://github.com/google/latexify_py.git), [handcalcs](https://github.com/connorferster/handcalcs.git), etc.) may be helpful due to the complex syntax of editting formula in LaTex.
 
 ## Citing a Section in the Same Wiki
 While citing a subsection (second to sixth level headings) in the same Wiki Markdown file, please use **custom anchor** to ensure the stability in collaborative development.

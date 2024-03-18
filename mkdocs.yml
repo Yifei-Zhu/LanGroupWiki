@@ -141,6 +141,7 @@ nav:
 
       - Newcomer Guide:
         - Navigation: wiki/Beginners/welcome.md
+        - wiki/Beginners/sshfs.md
 
       - Software Usage:
         - ./wiki/Software_guide/test.md

@@ -10,10 +10,10 @@
         <meta name="author" content="Yifei Zhu">
       
       
-        <link rel="canonical" href="https://yifei-zhu.github.io/LanGroupWiki/wiki/Software_guide/test.html">
+        <link rel="canonical" href="https://yifei-zhu.github.io/LanGroupWiki/wiki/Beginners/login_without_passwd.html">
       
       
-        <link rel="prev" href="../Beginners/welcome.html">
+        <link rel="prev" href="sshfs.html">
       
       
         <link rel="next" href="../Codes/lujz_internal_coordinate.html">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Gaussian 入门 - Lan Group Wiki (SCNU)</title>
+        <title>How to connect without password using SSH - Lan Group Wiki (SCNU)</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#test11212121221" class="md-skip">
+        <a href="#make-sure-that-ssh-server-is-running" class="md-skip">
           Skip to content
         </a>
       
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Gaussian 入门
+              How to connect without password using SSH
             
           </span>
         </div>
@@ -496,10 +496,16 @@
                 
   
   
+    
   
   
+  
     
     
+      
+        
+      
+        
       
         
       
@@ -507,12 +513,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -526,7 +532,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Newcomer Guide
@@ -540,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Beginners/welcome.html" class="md-nav__link">
+      <a href="welcome.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -549,6 +555,120 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sshfs.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How To Use SSHFS to Mount Remote File Systems Over SSH
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    How to connect without password using SSH
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="login_without_passwd.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    How to connect without password using SSH
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#make-sure-that-ssh-server-is-running" class="md-nav__link">
+    <span class="md-ellipsis">
+      Make sure that SSH server is running
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-to-remote-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connect to remote machine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-private-and-public-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate private and public keys
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copy-the-public-key-file-to-the-remote-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copy the public key file to the remote machine
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -566,8 +686,6 @@
                 
   
   
-    
-  
   
   
     
@@ -579,12 +697,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -598,7 +716,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             Software Usage
@@ -609,28 +727,18 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="test.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Software_guide/test.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Gaussian 入门
+    None
   </span>
   
 
       </a>
-      
     </li>
   
 
@@ -850,8 +958,50 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#make-sure-that-ssh-server-is-running" class="md-nav__link">
+    <span class="md-ellipsis">
+      Make sure that SSH server is running
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-to-remote-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connect to remote machine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-private-and-public-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate private and public keys
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copy-the-public-key-file-to-the-remote-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copy the public key file to the remote machine
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -864,150 +1014,55 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+<nav class="md-tags" >
+  
+    
+    
+    
+      <a href="../tags.html#author-guidelines" class="md-tag">Author Guidelines</a>
+    
+  
+    
+    
+    
+      <a href="../tags.html#linux" class="md-tag">Linux</a>
+    
+  
+</nav>
 
 
-<h1 id="test11212121221">Test11212121221<a class="headerlink" href="#test11212121221" title="Permanent link">&para;</a></h1>
-<p>This is a test
-asdasdas</p>
-<p>asdasd</p>
-<p>asd
-as
-da
-sda
-sd
-asd</p>
-<p>asdasd</p>
-<p>asd
-as
-da
-sda
-sd
-asd</p>
-<p>asdasd</p>
-<p>asd
-as
-da
-sda
-sd
-asd</p>
-<p>asdasd
-dasd</p>
-<p>asd
-as
-da
-sda
-sd
-asd</p>
-<p>asdasd
-dasd</p>
-<p>asd
-as
-da
-sda
-sd
-asd</p>
-<p>asdasd
-dasd</p>
-<p>asd
-as
-da
-sda
-sd
-asd</p>
-<p>asdasd
-dasd</p>
-<p>asd
-as
-da
-sda
-sd
-asd</p>
-<p>asdasd
-dasd</p>
-<p>asd
-as
-da
-sda
-sd
-asd</p>
-<p>asdasd
-dasd</p>
-<p>asd
-as
-da
-sda
-sd
-asd</p>
-<p>asdasd
-dasd</p>
-<p>asd
-as
-da
-sda
-sd
-asd</p>
-<p>asdasd
-dasd</p>
-<p>asd
-as
-da
-sda
-sd
-asd</p>
-<p>asdasd
-dasd</p>
-<p>asd
-as
-da
-sda
-sd
-asd</p>
-<p>asdasd
-dasd</p>
-<p>asd
-as
-da
-sda
-sd
-asd</p>
-<p>asdasd
-dasd</p>
-<p>asd
-as
-da
-sda
-sd
-asd</p>
-<p>asdasd</p>
-<p>asd
-as
-da
-sda
-sd
-asd</p>
-<p>asdasd</p>
-<p>asd
-as
-da
-sda
-sd
-asd</p>
-<p>asdasd</p>
-<p>asd
-as
-da
-sda
-sd
-asd</p>
-<p>asdasd</p>
-<p>asd
-as
-da
-sda
-sd
-asd
-asd</p>
-<p>!!!!</p>
+
+  <h1>How to connect without password using SSH</h1>
+
+<h2 id="make-sure-that-ssh-server-is-running">Make sure that SSH server is running<a class="headerlink" href="#make-sure-that-ssh-server-is-running" title="Permanent link">&para;</a></h2>
+<p>Check service status using: <code>sudo service sshd status or</code> or <code>sudo systemctl status sshd</code></p>
+<p>If the SSH service is closed, run the following command to start the ssh service: <code>sudo service sshd start</code> or <code>sudo systemtcl start sshd</code>.</p>
+<h2 id="connect-to-remote-machine">Connect to remote machine<a class="headerlink" href="#connect-to-remote-machine" title="Permanent link">&para;</a></h2>
+<p>Run the command <code>ssh remote_username@remote_server_ip_address</code> if it is the first time you logged into this host, you will get something like this :</p>
+<p><div class="highlight"><pre><span></span><code>The<span class="w"> </span>authenticity<span class="w"> </span>of<span class="w"> </span>host<span class="w"> </span>XXXXXX<span class="w"> </span>can’t<span class="w"> </span>be<span class="w"> </span>established.
+
+RSA<span class="w"> </span>key<span class="w"> </span>fingerprint<span class="w"> </span>is<span class="w"> </span>7c:e7:51:3b:86:70:07:ab:65:a9:bf:2d:c0:7b:1b:a7.
+
+Are<span class="w"> </span>you<span class="w"> </span>sure<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span><span class="k">continue</span><span class="w"> </span>connecting<span class="w"> </span><span class="o">(</span>yes/no<span class="o">)</span>?
+</code></pre></div>
+Type <code>yes</code> and then it will ask you to enter the password.
+You are now connected to the remote machine with the password.</p>
+<h2 id="generate-private-and-public-keys">Generate private and public keys<a class="headerlink" href="#generate-private-and-public-keys" title="Permanent link">&para;</a></h2>
+<p>Let’s back to our localhost machine, a key pair must be created with the command
+<div class="highlight"><pre><span></span><code>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>rsa
+</code></pre></div>
+Press Enter three times until the command finishes.
+A public key file <code>~/.ssh/id_rsa.pub</code> and a private key file <code>~/.ssh/id_rsa</code> will be generated.</p>
+<p>If your more interested in private and public keys using ssh please referee to this <a href="https://www.ssh.com/academy/ssh-keys#:~:text=An%20SSH%20key%20is%20an,system%20administrators%20and%20power%20users.">article</a>.</p>
+<h2 id="copy-the-public-key-file-to-the-remote-machine">Copy the public key file to the remote machine<a class="headerlink" href="#copy-the-public-key-file-to-the-remote-machine" title="Permanent link">&para;</a></h2>
+<p>Now that you have generated an SSH key pair, in order to be able to login to your machine without a password you need to copy the public key to the server you want to manage.
+<div class="highlight"><pre><span></span><code>ssh-copy-id<span class="w"> </span>remote_username@remote_server_ip_address
+</code></pre></div>
+You should be able to get onto the remote server without being requested for a password once you’ve followed the preceding instructions.</p>
+<p>To test it just try to login to your server via SSH:
+<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>remote_username@remote_server_ip_address
+</code></pre></div></p>
 
 
 

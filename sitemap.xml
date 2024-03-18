@@ -2,82 +2,92 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://yifei-zhu.github.io/LanGroupWiki/index.html</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-03-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yifei-zhu.github.io/LanGroupWiki/downloads/download_list.html</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-03-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/tags.html</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-03-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/Authors/author_note_en.html</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-03-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/Authors/markdown_en.html</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-03-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/Authors/python_standard_en.html</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-03-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/Authors/submit_wiki_en.html</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-03-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/Authors/zh/author_note.html</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-03-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/Authors/zh/markdown.html</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-03-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/Authors/zh/python_standard.html</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-03-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/Authors/zh/submit_wiki.html</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-03-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/Beginners/login_without_passwd.html</loc>
+         <lastmod>2024-03-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/Beginners/sshfs.html</loc>
+         <lastmod>2024-03-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/Beginners/welcome.html</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-03-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/Codes/lujz_internal_coordinate.html</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-03-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/Recommend/books.html</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-03-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/Software_guide/test.html</loc>
-         <lastmod>2024-02-03</lastmod>
+         <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/software_guide/test.html</loc>
+         <lastmod>2024-03-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/tags.html</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-03-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

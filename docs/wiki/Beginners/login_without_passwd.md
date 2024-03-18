@@ -4,7 +4,6 @@ title: How to connect without password using SSH
 author: Yifei Zhu
 comments: true
 tags:
- - Author Guidelines
  - Linux
 ---
 

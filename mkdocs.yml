@@ -143,6 +143,9 @@ nav:
         - Navigation: wiki/Beginners/welcome.md
         - wiki/Beginners/login_without_passwd.md
         - wiki/Beginners/sshfs.md
+        - wiki/Beginners/install_wsl.md
+        - wiki/Beginners/nvidia_in_ubuntu.md
+        - wiki/Beginners/pytorch_in_ubuntu.md
 
       - Software Usage:
         - ./wiki/Software_guide/test.md

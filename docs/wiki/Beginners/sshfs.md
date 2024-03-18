@@ -4,8 +4,7 @@ title: How To Use SSHFS to Mount Remote File Systems Over SSH
 author: Yifei Zhu
 comments: true
 tags:
- - Author Guidelines
- - Ubuntu
+ - Linux
 ---
 ## Introdcution
 SSHFS itself is a file system in user space (FUSE) that uses the SSH File Transfer Protocol (SFTP) to mount a remote file system.

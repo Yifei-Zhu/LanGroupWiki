@@ -134,18 +134,18 @@ nav:
   - Home: index.md
   - Wikis:
       - Author Guidelines:
-        - wiki/Authors/author_note_en.md
-        - wiki/Authors/markdown_en.md
-        - wiki/Authors/submit_wiki_en.md
-        - wiki/Authors/python_standard_en.md
+        - ./wiki/Authors/author_note_en.md
+        - ./wiki/Authors/markdown_en.md
+        - ./wiki/Authors/submit_wiki_en.md
+        - ./wiki/Authors/python_standard_en.md
 
       - Newcomer Guide:
-        - Navigation: wiki/Beginners/welcome.md
-        - wiki/Beginners/login_without_passwd.md
-        - wiki/Beginners/sshfs.md
-        - wiki/Beginners/install_wsl.md
-        - wiki/Beginners/nvidia_in_ubuntu.md
-        - wiki/Beginners/pytorch_in_ubuntu.md
+        - Navigation: ./wiki/Beginners/welcome.md
+        - ./wiki/Beginners/login_without_passwd.md
+        - ./wiki/Beginners/sshfs.md
+        - ./wiki/Beginners/install_wsl.md
+        - ./wiki/Beginners/nvidia_in_ubuntu.md
+        - ./wiki/Beginners/pytorch_in_ubuntu.md
 
       - Software Usage:
         - ./wiki/Software_guide/test.md
@@ -156,7 +156,7 @@ nav:
       - Recommended Resources:
         - ./wiki/Recommend/books.md
 
-      - Tags Quick Index: wiki/tags.md
+      - Tags Quick Index: ./wiki/tags.md
 
-      - Resource Download: downloads/download_list.md
+      - Resource Download: ./downloads/download_list.md
 

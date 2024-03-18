@@ -142,7 +142,7 @@ nav:
       - Newcomer Guide:
         - Navigation: wiki/Beginners/welcome.md
         - wiki/Beginners/sshfs.md
-
+        - wiki/Beginners/login_without_passwd.md
       - Software Usage:
         - ./wiki/Software_guide/test.md
 

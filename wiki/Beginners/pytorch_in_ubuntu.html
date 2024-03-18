@@ -7,29 +7,31 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-      
-        <link rel="canonical" href="https://yifei-zhu.github.io/LanGroupWiki/wiki/tags.html">
-      
-      
-        <link rel="prev" href="Recommend/books.html">
+        <meta name="author" content="Yifei Zhu">
       
       
-        <link rel="next" href="../downloads/download_list.html">
+        <link rel="canonical" href="https://yifei-zhu.github.io/LanGroupWiki/wiki/Beginners/pytorch_in_ubuntu.html">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+        <link rel="prev" href="nvidia_in_ubuntu.html">
+      
+      
+        <link rel="next" href="../Codes/lujz_internal_coordinate.html">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
     
     
       
-        <title>Tags Quick Index - Lan Group Wiki (SCNU)</title>
+        <title>How to use PyTorch on Linux - Lan Group Wiki (SCNU)</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tags" class="md-skip">
+        <a href="#1-install-anaconda-or-miniconda" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +112,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="Lan Group Wiki (SCNU)" class="md-header__button md-logo" aria-label="Lan Group Wiki (SCNU)" data-md-component="logo">
+    <a href="../../index.html" title="Lan Group Wiki (SCNU)" class="md-header__button md-logo" aria-label="Lan Group Wiki (SCNU)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -130,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tags Quick Index
+              How to use PyTorch on Linux
             
           </span>
         </div>
@@ -250,7 +252,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="Lan Group Wiki (SCNU)" class="md-nav__button md-logo" aria-label="Lan Group Wiki (SCNU)" data-md-component="logo">
+    <a href="../../index.html" title="Lan Group Wiki (SCNU)" class="md-nav__button md-logo" aria-label="Lan Group Wiki (SCNU)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -280,7 +282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="../../index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -405,7 +407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Authors/author_note_en.html" class="md-nav__link">
+      <a href="../Authors/author_note_en.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Authors/markdown_en.html" class="md-nav__link">
+      <a href="../Authors/markdown_en.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -447,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Authors/submit_wiki_en.html" class="md-nav__link">
+      <a href="../Authors/submit_wiki_en.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -468,7 +470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Authors/python_standard_en.html" class="md-nav__link">
+      <a href="../Authors/python_standard_en.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -494,8 +496,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -515,12 +519,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -534,7 +538,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Newcomer Guide
@@ -548,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Beginners/welcome.html" class="md-nav__link">
+      <a href="welcome.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -569,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Beginners/login_without_passwd.html" class="md-nav__link">
+      <a href="login_without_passwd.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -590,7 +594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Beginners/sshfs.html" class="md-nav__link">
+      <a href="sshfs.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -611,7 +615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Beginners/install_wsl.html" class="md-nav__link">
+      <a href="install_wsl.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -632,7 +636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Beginners/nvidia_in_ubuntu.html" class="md-nav__link">
+      <a href="nvidia_in_ubuntu.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -650,10 +654,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="Beginners/pytorch_in_ubuntu.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    How to use PyTorch on Linux
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="pytorch_in_ubuntu.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -662,6 +684,75 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-install-anaconda-or-miniconda" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 Install Anaconda or Miniconda
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 Install Anaconda or Miniconda">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-anaconda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download Anaconda
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-anaconda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Anaconda
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-install-pytorch" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 Install PyTorch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-checking-the-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 Checking the installation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -723,7 +814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Software_guide/test.md" class="md-nav__link">
+      <a href="../Software_guide/test.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -793,7 +884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Codes/lujz_internal_coordinate.html" class="md-nav__link">
+      <a href="../Codes/lujz_internal_coordinate.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -863,7 +954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Recommend/books.html" class="md-nav__link">
+      <a href="../Recommend/books.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -889,30 +980,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Tags Quick Index
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="tags.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../tags.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -921,116 +992,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#author-guidelines" class="md-nav__link">
-    <span class="md-ellipsis">
-      Author Guidelines
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#git" class="md-nav__link">
-    <span class="md-ellipsis">
-      Git
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linux
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#markdown" class="md-nav__link">
-    <span class="md-ellipsis">
-      Markdown
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nvidia" class="md-nav__link">
-    <span class="md-ellipsis">
-      NVIDIA
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#numpy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Numpy
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python" class="md-nav__link">
-    <span class="md-ellipsis">
-      Python
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#shared-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      Shared Code
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
-    <span class="md-ellipsis">
-      Windows
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      下载专区
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1043,7 +1004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../downloads/download_list.html" class="md-nav__link">
+      <a href="../../downloads/download_list.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1081,8 +1042,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1091,90 +1050,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#author-guidelines" class="md-nav__link">
+  <a href="#1-install-anaconda-or-miniconda" class="md-nav__link">
     <span class="md-ellipsis">
-      Author Guidelines
+      1 Install Anaconda or Miniconda
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 Install Anaconda or Miniconda">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-anaconda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download Anaconda
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-anaconda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Anaconda
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-install-pytorch" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 Install PyTorch
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#git" class="md-nav__link">
+  <a href="#3-checking-the-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Git
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linux
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#markdown" class="md-nav__link">
-    <span class="md-ellipsis">
-      Markdown
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nvidia" class="md-nav__link">
-    <span class="md-ellipsis">
-      NVIDIA
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#numpy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Numpy
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python" class="md-nav__link">
-    <span class="md-ellipsis">
-      Python
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#shared-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      Shared Code
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
-    <span class="md-ellipsis">
-      Windows
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      下载专区
+      3 Checking the installation
     </span>
   </a>
   
@@ -1193,94 +1113,58 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+<nav class="md-tags" >
+  
+    
+    
+    
+      <a href="../tags.html#linux" class="md-tag">Linux</a>
+    
+  
+    
+    
+    
+      <a href="../tags.html#nvidia" class="md-tag">NVIDIA</a>
+    
+  
+</nav>
 
 
-<h1 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h1>
-<p>The following tags must be included in the files of corresponding section:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Section/Topic</th>
-<th style="text-align: left;">Tag</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">Author Guidelines</td>
-<td style="text-align: left;">Author Guidelines</td>
-</tr>
-<tr>
-<td style="text-align: left;">Newcomer Guide</td>
-<td style="text-align: left;">Newcomer Guide</td>
-</tr>
-<tr>
-<td style="text-align: left;">Sortware Usage</td>
-<td style="text-align: left;">Sortware Usage</td>
-</tr>
-<tr>
-<td style="text-align: left;">Code Sharing</td>
-<td style="text-align: left;">Shared Code</td>
-</tr>
-<tr>
-<td style="text-align: left;">Recommended Resources</td>
-<td style="text-align: left;">Studying Resource</td>
-</tr>
-<tr>
-<td style="text-align: left;">Recommended Books/Vedios/etc.</td>
-<td style="text-align: left;">Book/Video/...</td>
-</tr>
-</tbody>
-</table>
-<p>Following is a list of relevant tags:</p>
-<h2 id="author-guidelines"><span class="md-tag">Author Guidelines</span><a class="headerlink" href="#author-guidelines" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Authors/author_note_en.html">How to start</a></li>
-<li><a href="Authors/markdown_en.html">How to Use Markdown</a></li>
-<li><a href="Authors/python_standard_en.html">How to Write Python Code in a Standardized Manner</a></li>
-<li><a href="Authors/submit_wiki_en.html">Elegantly Using Gitee/GitHub for Wiki Collaboration</a></li>
-</ul>
-<h2 id="git"><span class="md-tag">Git</span><a class="headerlink" href="#git" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Authors/submit_wiki_en.html">Elegantly Using Gitee/GitHub for Wiki Collaboration</a></li>
-</ul>
-<h2 id="linux"><span class="md-tag">Linux</span><a class="headerlink" href="#linux" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Beginners/install_wsl.html">How to install WSL on Windows</a></li>
-<li><a href="Beginners/login_without_passwd.html">How to connect without password using SSH</a></li>
-<li><a href="Beginners/nvidia_in_ubuntu.html">How to use NVIDIA GPUs on Linux</a></li>
-<li><a href="Beginners/pytorch_in_ubuntu.html">How to use PyTorch on Linux</a></li>
-<li><a href="Beginners/sshfs.html">How To Use SSHFS to Mount Remote File Systems Over SSH</a></li>
-</ul>
-<h2 id="markdown"><span class="md-tag">Markdown</span><a class="headerlink" href="#markdown" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Authors/markdown_en.html">How to Use Markdown</a></li>
-</ul>
-<h2 id="nvidia"><span class="md-tag">NVIDIA</span><a class="headerlink" href="#nvidia" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Beginners/nvidia_in_ubuntu.html">How to use NVIDIA GPUs on Linux</a></li>
-<li><a href="Beginners/pytorch_in_ubuntu.html">How to use PyTorch on Linux</a></li>
-</ul>
-<h2 id="numpy"><span class="md-tag">Numpy</span><a class="headerlink" href="#numpy" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Codes/lujz_internal_coordinate.html">批量计算二面角/键角/键长代码的使用</a></li>
-</ul>
-<h2 id="python"><span class="md-tag">Python</span><a class="headerlink" href="#python" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Authors/python_standard_en.html">How to Write Python Code in a Standardized Manner</a></li>
-<li><a href="Codes/lujz_internal_coordinate.html">批量计算二面角/键角/键长代码的使用</a></li>
-</ul>
-<h2 id="shared-code"><span class="md-tag">Shared Code</span><a class="headerlink" href="#shared-code" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Codes/lujz_internal_coordinate.html">批量计算二面角/键角/键长代码的使用</a></li>
-</ul>
-<h2 id="windows"><span class="md-tag">Windows</span><a class="headerlink" href="#windows" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Beginners/install_wsl.html">How to install WSL on Windows</a></li>
-</ul>
-<h2 id="_1"><span class="md-tag">下载专区</span><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="../downloads/download_list.html">Download list</a></li>
-</ul>
+
+  <h1>How to use PyTorch on Linux</h1>
+
+<p>Follow this wiki step by step to set up PyTorch on Linux (using Ubuntu 22.04 as an example)
+If you want to configure the GPU-version PyTorch, you should correctly <a href="nvidia_in_ubuntu.html">set up the NVIDIA GPUs on your Linux</a>.</p>
+<h2 id="1-install-anaconda-or-miniconda">1 Install Anaconda or Miniconda<a class="headerlink" href="#1-install-anaconda-or-miniconda" title="Permanent link">&para;</a></h2>
+<p>Miniconda is a free minimal installer for conda.
+It is a small bootstrap version of Anaconda that includes only conda, Python, the packages they both depend on, and a small number of other useful packages (like pip, zlib, and a few others).</p>
+<p>If you are configuring a conda environment on your own laptop, we recommend using miniconda.
+However, here we take Anaconda as an example.</p>
+<h4 id="download-anaconda">Download Anaconda<a class="headerlink" href="#download-anaconda" title="Permanent link">&para;</a></h4>
+<p>You can manually download the <code>Anaconda_xxxx.sh</code> from the official website or other mirrors, for example, <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/">Tsinghua sonrce</a>.
+You can also use <code>wget</code> command to download the <code>.sh</code> file.</p>
+<h4 id="install-anaconda">Install Anaconda<a class="headerlink" href="#install-anaconda" title="Permanent link">&para;</a></h4>
+<p>Then run <code>bash Anaconda_xxxx.sh</code> to install Anaconda on your system.
+Finally, restart the terminal.</p>
+<div class="admonition info">
+<p class="admonition-title"><code>base</code> environment is not activated</p>
+<p>If the <code>base</code> environment is not automatically activated when you finish the installation, you should run the command <code>conda init bash</code> and <code>conda activate base</code> following the prompts.</p>
+</div>
+<h2 id="2-install-pytorch">2 Install PyTorch<a class="headerlink" href="#2-install-pytorch" title="Permanent link">&para;</a></h2>
+<p>Visit the <a href="https://pytorch.org/">PyTorch official website</a> and select options according to your situations.
+Just run the command in the local terminal.</p>
+<div class="admonition info">
+<p class="admonition-title">A dedicated environment for PyTorch</p>
+<p>If you are concerned about potential conflicts between different project environments, it's advisable to create a dedicated environment specifically for PyTorch.
+  You can do this by executing <code>conda create -n YOUR_ENV_NAME python=3.xx</code>, where <code>YOUR_ENV_NAME</code> is the name you choose for your PyTorch environment, and <code>3.xx</code> is the Python version you intend to use.</p>
+<p>Then you can use <code>conda activate YOUR_ENV_NAME</code> to activate this environment, in which you can run the command obtained from the PyTorch official website to install PyTorch.</p>
+</div>
+<h2 id="3-checking-the-installation">3 Checking the installation<a class="headerlink" href="#3-checking-the-installation" title="Permanent link">&para;</a></h2>
+<p><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">torch</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">())</span>
+</code></pre></div>
+Running this code will print <code>True</code> if PyTorch can access a GPU (meaning CUDA is available and configured correctly for PyTorch).</p>
 
 
 
@@ -1288,10 +1172,61 @@
 
 
 
+  
+  
 
 
 
 
+
+
+  <h2 id="__comments">Comments</h2>
+  <!-- Insert generated snippet here -->
+<script src="https://giscus.app/client.js"
+        data-repo="Yifei-Zhu/LanGroupWiki"
+        data-repo-id="R_kgDOLF67Fg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOLF67Fs4Ccgr4"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme)
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 
                 
               </article>
@@ -1372,14 +1307,14 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "navigation.instant", "navigation.path", "navigation.sections", "navigation.indexes", "navigation.top", "content.tooltips", "search.suggest", "search.share", "content.code.annotate", "announce.dismiss"], "search": "../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.instant", "navigation.path", "navigation.sections", "navigation.indexes", "navigation.top", "content.tooltips", "search.suggest", "search.share", "content.code.annotate", "announce.dismiss"], "search": "../../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.7389ff0e.min.js"></script>
       
-        <script src="../javascripts/analytic.js"></script>
+        <script src="../../javascripts/analytic.js"></script>
       
-        <script src="../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

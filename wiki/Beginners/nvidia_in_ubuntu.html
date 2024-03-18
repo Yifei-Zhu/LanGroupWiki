@@ -7,29 +7,31 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-      
-        <link rel="canonical" href="https://yifei-zhu.github.io/LanGroupWiki/wiki/tags.html">
-      
-      
-        <link rel="prev" href="Recommend/books.html">
+        <meta name="author" content="Yifei Zhu">
       
       
-        <link rel="next" href="../downloads/download_list.html">
+        <link rel="canonical" href="https://yifei-zhu.github.io/LanGroupWiki/wiki/Beginners/nvidia_in_ubuntu.html">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+        <link rel="prev" href="install_wsl.html">
+      
+      
+        <link rel="next" href="pytorch_in_ubuntu.html">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
     
     
       
-        <title>Tags Quick Index - Lan Group Wiki (SCNU)</title>
+        <title>How to use NVIDIA GPUs on Linux - Lan Group Wiki (SCNU)</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tags" class="md-skip">
+        <a href="#1-install-a-suitable-nvidia-driver" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +112,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="Lan Group Wiki (SCNU)" class="md-header__button md-logo" aria-label="Lan Group Wiki (SCNU)" data-md-component="logo">
+    <a href="../../index.html" title="Lan Group Wiki (SCNU)" class="md-header__button md-logo" aria-label="Lan Group Wiki (SCNU)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -130,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tags Quick Index
+              How to use NVIDIA GPUs on Linux
             
           </span>
         </div>
@@ -250,7 +252,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="Lan Group Wiki (SCNU)" class="md-nav__button md-logo" aria-label="Lan Group Wiki (SCNU)" data-md-component="logo">
+    <a href="../../index.html" title="Lan Group Wiki (SCNU)" class="md-nav__button md-logo" aria-label="Lan Group Wiki (SCNU)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -280,7 +282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="../../index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -405,7 +407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Authors/author_note_en.html" class="md-nav__link">
+      <a href="../Authors/author_note_en.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Authors/markdown_en.html" class="md-nav__link">
+      <a href="../Authors/markdown_en.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -447,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Authors/submit_wiki_en.html" class="md-nav__link">
+      <a href="../Authors/submit_wiki_en.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -468,7 +470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Authors/python_standard_en.html" class="md-nav__link">
+      <a href="../Authors/python_standard_en.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -494,8 +496,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -515,12 +519,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -534,7 +538,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Newcomer Guide
@@ -548,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Beginners/welcome.html" class="md-nav__link">
+      <a href="welcome.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -569,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Beginners/login_without_passwd.html" class="md-nav__link">
+      <a href="login_without_passwd.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -590,7 +594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Beginners/sshfs.html" class="md-nav__link">
+      <a href="sshfs.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -611,7 +615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Beginners/install_wsl.html" class="md-nav__link">
+      <a href="install_wsl.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -629,10 +633,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="Beginners/nvidia_in_ubuntu.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    How to use NVIDIA GPUs on Linux
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="nvidia_in_ubuntu.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -641,6 +663,108 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-install-a-suitable-nvidia-driver" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 Install a Suitable NVIDIA Driver
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 Install a Suitable NVIDIA Driver">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-1-manually-download-and-install" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 1: Manually download and install
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-2-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 2: Command line
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 2: Command line">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-your-package-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update your package list
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-available-drivers" class="md-nav__link">
+    <span class="md-ellipsis">
+      List available drivers:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-the-recommended-or-the-specific-version-nvidia-driver" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install the recommended or the specific version NVIDIA driver
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reboot-your-computer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reboot your computer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-install-cuda-toolkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 Install CUDA Toolkit
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -653,7 +777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Beginners/pytorch_in_ubuntu.html" class="md-nav__link">
+      <a href="pytorch_in_ubuntu.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -723,7 +847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Software_guide/test.md" class="md-nav__link">
+      <a href="../Software_guide/test.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -793,7 +917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Codes/lujz_internal_coordinate.html" class="md-nav__link">
+      <a href="../Codes/lujz_internal_coordinate.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -863,7 +987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Recommend/books.html" class="md-nav__link">
+      <a href="../Recommend/books.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -889,30 +1013,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Tags Quick Index
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="tags.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../tags.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -921,116 +1025,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#author-guidelines" class="md-nav__link">
-    <span class="md-ellipsis">
-      Author Guidelines
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#git" class="md-nav__link">
-    <span class="md-ellipsis">
-      Git
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linux
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#markdown" class="md-nav__link">
-    <span class="md-ellipsis">
-      Markdown
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nvidia" class="md-nav__link">
-    <span class="md-ellipsis">
-      NVIDIA
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#numpy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Numpy
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python" class="md-nav__link">
-    <span class="md-ellipsis">
-      Python
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#shared-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      Shared Code
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
-    <span class="md-ellipsis">
-      Windows
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      下载专区
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1043,7 +1037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../downloads/download_list.html" class="md-nav__link">
+      <a href="../../downloads/download_list.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1081,8 +1075,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1091,90 +1083,84 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#author-guidelines" class="md-nav__link">
+  <a href="#1-install-a-suitable-nvidia-driver" class="md-nav__link">
     <span class="md-ellipsis">
-      Author Guidelines
+      1 Install a Suitable NVIDIA Driver
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 Install a Suitable NVIDIA Driver">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-1-manually-download-and-install" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 1: Manually download and install
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#git" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#method-2-command-line" class="md-nav__link">
     <span class="md-ellipsis">
-      Git
+      Method 2: Command line
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 2: Command line">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-your-package-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update your package list
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#list-available-drivers" class="md-nav__link">
     <span class="md-ellipsis">
-      Linux
+      List available drivers:
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#markdown" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#install-the-recommended-or-the-specific-version-nvidia-driver" class="md-nav__link">
     <span class="md-ellipsis">
-      Markdown
+      Install the recommended or the specific version NVIDIA driver
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#nvidia" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#reboot-your-computer" class="md-nav__link">
     <span class="md-ellipsis">
-      NVIDIA
+      Reboot your computer
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#numpy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Numpy
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#python" class="md-nav__link">
+  <a href="#2-install-cuda-toolkit" class="md-nav__link">
     <span class="md-ellipsis">
-      Python
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#shared-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      Shared Code
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
-    <span class="md-ellipsis">
-      Windows
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      下载专区
+      2 Install CUDA Toolkit
     </span>
   </a>
   
@@ -1193,94 +1179,66 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+<nav class="md-tags" >
+  
+    
+    
+    
+      <a href="../tags.html#linux" class="md-tag">Linux</a>
+    
+  
+    
+    
+    
+      <a href="../tags.html#nvidia" class="md-tag">NVIDIA</a>
+    
+  
+</nav>
 
 
-<h1 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h1>
-<p>The following tags must be included in the files of corresponding section:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Section/Topic</th>
-<th style="text-align: left;">Tag</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">Author Guidelines</td>
-<td style="text-align: left;">Author Guidelines</td>
-</tr>
-<tr>
-<td style="text-align: left;">Newcomer Guide</td>
-<td style="text-align: left;">Newcomer Guide</td>
-</tr>
-<tr>
-<td style="text-align: left;">Sortware Usage</td>
-<td style="text-align: left;">Sortware Usage</td>
-</tr>
-<tr>
-<td style="text-align: left;">Code Sharing</td>
-<td style="text-align: left;">Shared Code</td>
-</tr>
-<tr>
-<td style="text-align: left;">Recommended Resources</td>
-<td style="text-align: left;">Studying Resource</td>
-</tr>
-<tr>
-<td style="text-align: left;">Recommended Books/Vedios/etc.</td>
-<td style="text-align: left;">Book/Video/...</td>
-</tr>
-</tbody>
-</table>
-<p>Following is a list of relevant tags:</p>
-<h2 id="author-guidelines"><span class="md-tag">Author Guidelines</span><a class="headerlink" href="#author-guidelines" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Authors/author_note_en.html">How to start</a></li>
-<li><a href="Authors/markdown_en.html">How to Use Markdown</a></li>
-<li><a href="Authors/python_standard_en.html">How to Write Python Code in a Standardized Manner</a></li>
-<li><a href="Authors/submit_wiki_en.html">Elegantly Using Gitee/GitHub for Wiki Collaboration</a></li>
-</ul>
-<h2 id="git"><span class="md-tag">Git</span><a class="headerlink" href="#git" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Authors/submit_wiki_en.html">Elegantly Using Gitee/GitHub for Wiki Collaboration</a></li>
-</ul>
-<h2 id="linux"><span class="md-tag">Linux</span><a class="headerlink" href="#linux" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Beginners/install_wsl.html">How to install WSL on Windows</a></li>
-<li><a href="Beginners/login_without_passwd.html">How to connect without password using SSH</a></li>
-<li><a href="Beginners/nvidia_in_ubuntu.html">How to use NVIDIA GPUs on Linux</a></li>
-<li><a href="Beginners/pytorch_in_ubuntu.html">How to use PyTorch on Linux</a></li>
-<li><a href="Beginners/sshfs.html">How To Use SSHFS to Mount Remote File Systems Over SSH</a></li>
-</ul>
-<h2 id="markdown"><span class="md-tag">Markdown</span><a class="headerlink" href="#markdown" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Authors/markdown_en.html">How to Use Markdown</a></li>
-</ul>
-<h2 id="nvidia"><span class="md-tag">NVIDIA</span><a class="headerlink" href="#nvidia" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Beginners/nvidia_in_ubuntu.html">How to use NVIDIA GPUs on Linux</a></li>
-<li><a href="Beginners/pytorch_in_ubuntu.html">How to use PyTorch on Linux</a></li>
-</ul>
-<h2 id="numpy"><span class="md-tag">Numpy</span><a class="headerlink" href="#numpy" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Codes/lujz_internal_coordinate.html">批量计算二面角/键角/键长代码的使用</a></li>
-</ul>
-<h2 id="python"><span class="md-tag">Python</span><a class="headerlink" href="#python" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Authors/python_standard_en.html">How to Write Python Code in a Standardized Manner</a></li>
-<li><a href="Codes/lujz_internal_coordinate.html">批量计算二面角/键角/键长代码的使用</a></li>
-</ul>
-<h2 id="shared-code"><span class="md-tag">Shared Code</span><a class="headerlink" href="#shared-code" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Codes/lujz_internal_coordinate.html">批量计算二面角/键角/键长代码的使用</a></li>
-</ul>
-<h2 id="windows"><span class="md-tag">Windows</span><a class="headerlink" href="#windows" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Beginners/install_wsl.html">How to install WSL on Windows</a></li>
-</ul>
-<h2 id="_1"><span class="md-tag">下载专区</span><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="../downloads/download_list.html">Download list</a></li>
-</ul>
+
+  <h1>How to use NVIDIA GPUs on Linux</h1>
+
+<p>Follow this wiki step by step to set up NVIDIA GPU on Linux (using Ubuntu 22.04 as an example)</p>
+<h2 id="1-install-a-suitable-nvidia-driver">1 Install a Suitable NVIDIA Driver<a class="headerlink" href="#1-install-a-suitable-nvidia-driver" title="Permanent link">&para;</a></h2>
+<h3 id="method-1-manually-download-and-install">Method 1: Manually download and install<a class="headerlink" href="#method-1-manually-download-and-install" title="Permanent link">&para;</a></h3>
+<p>This driver can be manually downloaded and installed from the <a href="https://www.nvidia.cn/geforce/drivers/">NVIDIA official website</a>.</p>
+<h3 id="method-2-command-line">Method 2: Command line<a class="headerlink" href="#method-2-command-line" title="Permanent link">&para;</a></h3>
+<h5 id="update-your-package-list">Update your package list<a class="headerlink" href="#update-your-package-list" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</code></pre></div>
+<h5 id="list-available-drivers">List available drivers:<a class="headerlink" href="#list-available-drivers" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>ubuntu-drivers<span class="w"> </span>devices
+</code></pre></div>
+<h5 id="install-the-recommended-or-the-specific-version-nvidia-driver">Install the recommended or the specific version NVIDIA driver<a class="headerlink" href="#install-the-recommended-or-the-specific-version-nvidia-driver" title="Permanent link">&para;</a></h5>
+<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ubuntu-drivers<span class="w"> </span>autoinstall
+</code></pre></div>
+or</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>nvidia-driver-532
+</code></pre></div>
+<h5 id="reboot-your-computer">Reboot your computer<a class="headerlink" href="#reboot-your-computer" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>reboot
+</code></pre></div>
+<h2 id="2-install-cuda-toolkit">2 Install CUDA Toolkit<a class="headerlink" href="#2-install-cuda-toolkit" title="Permanent link">&para;</a></h2>
+<p>Visit the <a href="https://developer.nvidia.com/cuda-downloads">CUDA Toolkits Downloads pages</a> on the NVIDIA official website.
+Then choose the options according to your situation.
+NVIDIA provide three ways to install the CUDA Toolkit with specific version.
+Here is the <code>runfile(local)</code> I recommend because I am sure you are as lazy as me.</p>
+<div class="admonition info">
+<p class="admonition-title">Installation of other development tools</p>
+<p>While you run the command <code>sudo sh cuda_xxxxxx_linux.run</code>, you need several development tools, such as <code>gcc</code>, <code>g++</code>, <code>make</code>, etc.
+  If you haven't installed them yet, you can use <code>sudo apt install build-essential</code> to install almost of them.</p>
+</div>
+<p>After the installation is complete, to ensure that <code>nvcc</code> and other CUDA commands can be called from anywhere, you need to add the CUDA Toolkit's binary directory to your PATH environment variable, as well as configure the LD_LIBRARY_PATH for the library files.
+You can add the following lines to your <code>.bashrc</code> or <code>.profile</code> file:</p>
+<p><div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span>/usr/local/cuda-12.4/bin:<span class="nv">$PATH</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/usr/local/cuda-12.4/lib64:<span class="nv">$LD_LIBRARY_PATH</span>
+</code></pre></div>
+Then you should apply the environment variables</p>
+<p>Finally, use the following command to test the environment configuration:</p>
+<div class="highlight"><pre><span></span><code>nvcc<span class="w"> </span>-V
+</code></pre></div>
 
 
 
@@ -1288,10 +1246,61 @@
 
 
 
+  
+  
 
 
 
 
+
+
+  <h2 id="__comments">Comments</h2>
+  <!-- Insert generated snippet here -->
+<script src="https://giscus.app/client.js"
+        data-repo="Yifei-Zhu/LanGroupWiki"
+        data-repo-id="R_kgDOLF67Fg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOLF67Fs4Ccgr4"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme)
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 
                 
               </article>
@@ -1372,14 +1381,14 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "navigation.instant", "navigation.path", "navigation.sections", "navigation.indexes", "navigation.top", "content.tooltips", "search.suggest", "search.share", "content.code.annotate", "announce.dismiss"], "search": "../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.instant", "navigation.path", "navigation.sections", "navigation.indexes", "navigation.top", "content.tooltips", "search.suggest", "search.share", "content.code.annotate", "announce.dismiss"], "search": "../../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.7389ff0e.min.js"></script>
       
-        <script src="../javascripts/analytic.js"></script>
+        <script src="../../javascripts/analytic.js"></script>
       
-        <script src="../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

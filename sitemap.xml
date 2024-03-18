@@ -56,7 +56,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/Beginners/install_wsl.html</loc>
+         <lastmod>2024-03-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/Beginners/login_without_passwd.html</loc>
+         <lastmod>2024-03-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/Beginners/nvidia_in_ubuntu.html</loc>
+         <lastmod>2024-03-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yifei-zhu.github.io/LanGroupWiki/wiki/Beginners/pytorch_in_ubuntu.html</loc>
          <lastmod>2024-03-18</lastmod>
          <changefreq>daily</changefreq>
     </url>

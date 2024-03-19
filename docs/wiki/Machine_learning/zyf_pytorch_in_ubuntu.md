@@ -6,7 +6,7 @@ comments: true
 tags:
  - Linux
  - Python
- - Pytorch
+ - PyTorch
 ---
 Follow this wiki step by step to set up PyTorch on Linux (using Ubuntu 22.04 as an example)
 If you want to configure the GPU-version PyTorch, you should correctly [set up the NVIDIA GPUs on your Linux](./nvidia_in_ubuntu.md).

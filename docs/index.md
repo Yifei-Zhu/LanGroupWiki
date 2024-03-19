@@ -17,11 +17,3 @@ Everyone is welcome to collaborate and improve together, please refer to *[How t
 
 <!-- ## Jumping to some main content
 1. [How to start?](./wiki/Authors/submit_wiki_en.md) -->
-
-# Hello world! Newcomers!
-
-Welcome to the Lan Group family.
-
-This module is dedicated to helping and guiding newcomers who are just entering the field of computational chemistry.
-
-Please read the content of this module carefully!

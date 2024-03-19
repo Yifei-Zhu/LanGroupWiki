@@ -7,16 +7,16 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <meta name="author" content="Jingze Lu">
+        <meta name="author" content="Yifei Zhu">
       
       
-        <link rel="canonical" href="https://yifei-zhu.github.io/LanGroupWiki/wiki/Codes/lujz_internal_coordinate.html">
+        <link rel="canonical" href="https://yifei-zhu.github.io/LanGroupWiki/wiki/Beginners/zyf_login_without_passwd.html">
       
       
-        <link rel="prev" href="../Machine_learning/zyf_unimol_install.html">
+        <link rel="prev" href="welcome.html">
       
       
-        <link rel="next" href="../Recommend/books.html">
+        <link rel="next" href="zyf_sshfs.html">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>批量计算二面角/键角/键长代码的使用 - Lan Group Wiki (SCNU)</title>
+        <title>How to connect without password using SSH - Lan Group Wiki (SCNU)</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#make-sure-that-ssh-server-is-running" class="md-skip">
           Skip to content
         </a>
       
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              批量计算二面角/键角/键长代码的使用
+              How to connect without password using SSH
             
           </span>
         </div>
@@ -498,8 +498,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -515,12 +517,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -534,7 +536,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Newcomer Guide
@@ -548,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Beginners/welcome.html" class="md-nav__link">
+      <a href="welcome.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -566,10 +568,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Beginners/zyf_login_without_passwd.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    How to connect without password using SSH
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="zyf_login_without_passwd.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -578,6 +598,60 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#make-sure-that-ssh-server-is-running" class="md-nav__link">
+    <span class="md-ellipsis">
+      Make sure that SSH server is running
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-to-remote-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connect to remote machine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-private-and-public-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate private and public keys
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copy-the-public-key-file-to-the-remote-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copy the public key file to the remote machine
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -590,7 +664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Beginners/zyf_sshfs.html" class="md-nav__link">
+      <a href="zyf_sshfs.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -611,7 +685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Beginners/zyf_install_wsl.html" class="md-nav__link">
+      <a href="zyf_install_wsl.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -872,8 +946,6 @@
                 
   
   
-    
-  
   
   
     
@@ -885,12 +957,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
         
           
           <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -904,7 +976,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
             Code Sharing
@@ -915,28 +987,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    批量计算二面角/键角/键长代码的使用
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="lujz_internal_coordinate.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Codes/lujz_internal_coordinate.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -945,93 +999,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 代码简介
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 使用示例
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. 使用示例">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1 二面角的计算
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.2 键角的计算
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#23" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.3 键长的计算
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 可能出现的问题
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. 源码
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1189,69 +1156,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#make-sure-that-ssh-server-is-running" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 代码简介
+      Make sure that SSH server is running
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#connect-to-remote-machine" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 使用示例
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. 使用示例">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1 二面角的计算
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.2 键角的计算
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#23" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.3 键长的计算
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 可能出现的问题
+      Connect to remote machine
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#generate-private-and-public-keys" class="md-nav__link">
     <span class="md-ellipsis">
-      4. 源码
+      Generate private and public keys
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copy-the-public-key-file-to-the-remote-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copy the public key file to the remote machine
     </span>
   </a>
   
@@ -1276,162 +1210,43 @@
     
     
     
-      <a href="../tags.html#python" class="md-tag">Python</a>
-    
-  
-    
-    
-    
-      <a href="../tags.html#numpy" class="md-tag">Numpy</a>
-    
-  
-    
-    
-    
-      <a href="../tags.html#shared-code" class="md-tag">Shared Code</a>
+      <a href="../tags.html#linux" class="md-tag">Linux</a>
     
   
 </nav>
 
 
 
-  <h1>批量计算二面角/键角/键长代码的使用</h1>
+  <h1>How to connect without password using SSH</h1>
 
-<h2 id="1">1. 代码简介<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
-<p>代码定义了一个Atom类，在类的实例化时传入原子编号。调用<code>cal()</code>函数可以根据原子编号的数量，批量计算二面角/键角/键长。<code>cal()</code>默认计算脚本目录下所有的 <strong>Gaussian</strong> 输出文件（.log），如果需要计算特定的文件，请在<code>cal()</code>传入文件名。</p>
-<h2 id="2">2. 使用示例<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
-<p>将 .py 文件和存有原子数据的 .log 文本放在同一目录下。</p>
-<h3 id="21">2.1 二面角的计算<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
-<p>​   在类的实例化时，传入四个参数。注意中间两个原子为面的交线。</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<h2 id="make-sure-that-ssh-server-is-running">Make sure that SSH server is running<a class="headerlink" href="#make-sure-that-ssh-server-is-running" title="Permanent link">&para;</a></h2>
+<p>Check service status using: <code>sudo service sshd status or</code> or <code>sudo systemctl status sshd</code></p>
+<p>If the SSH service is closed, run the following command to start the ssh service: <code>sudo service sshd start</code> or <code>sudo systemtcl start sshd</code>.</p>
+<h2 id="connect-to-remote-machine">Connect to remote machine<a class="headerlink" href="#connect-to-remote-machine" title="Permanent link">&para;</a></h2>
+<p>Run the command <code>ssh remote_username@remote_server_ip_address</code> if it is the first time you logged into this host, you will get something like this :</p>
+<p><div class="highlight"><pre><span></span><code>The<span class="w"> </span>authenticity<span class="w"> </span>of<span class="w"> </span>host<span class="w"> </span>XXXXXX<span class="w"> </span>can’t<span class="w"> </span>be<span class="w"> </span>established.
 
-<span class="n">a</span> <span class="o">=</span> <span class="n">Atom</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>  <span class="c1"># 实例化</span>
-<span class="n">a1</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">cal</span><span class="p">()</span>
-<span class="sd">&quot;&quot;&quot; &gt;&gt;&gt;</span>
-<span class="sd">文件10.log中，(9, 8, 13, 14)号原子形成的二面角是：180.00</span>
-<span class="sd">文件11.log中，(9, 8, 13, 14)号原子形成的二面角是：170.00</span>
-<span class="sd">文件14.log中，(9, 8, 13, 14)号原子形成的二面角是：140.00</span>
-<span class="sd">文件16.log中，(9, 8, 13, 14)号原子形成的二面角是：120.00</span>
-<span class="sd">文件19.log中，(9, 8, 13, 14)号原子形成的二面角是：100.00</span>
-<span class="sd">&quot;&quot;&quot;</span>
+RSA<span class="w"> </span>key<span class="w"> </span>fingerprint<span class="w"> </span>is<span class="w"> </span>7c:e7:51:3b:86:70:07:ab:65:a9:bf:2d:c0:7b:1b:a7.
+
+Are<span class="w"> </span>you<span class="w"> </span>sure<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span><span class="k">continue</span><span class="w"> </span>connecting<span class="w"> </span><span class="o">(</span>yes/no<span class="o">)</span>?
 </code></pre></div>
-<p>计算特定某几个文件：</p>
-<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="n">Atom</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>  <span class="c1"># 实例化</span>
-<span class="n">a1</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">cal</span><span class="p">(</span><span class="s1">&#39;10.log&#39;</span><span class="p">,</span><span class="s1">&#39;11.log&#39;</span><span class="p">)</span>
-<span class="sd">&quot;&quot;&quot; &gt;&gt;&gt;</span>
-<span class="sd">文件10.log中，(9, 8, 13, 14)号原子形成的二面角是：180.00</span>
-<span class="sd">文件11.log中，(9, 8, 13, 14)号原子形成的二面角是：170.00</span>
-<span class="sd">&quot;&quot;&quot;</span>
+Type <code>yes</code> and then it will ask you to enter the password.
+You are now connected to the remote machine with the password.</p>
+<h2 id="generate-private-and-public-keys">Generate private and public keys<a class="headerlink" href="#generate-private-and-public-keys" title="Permanent link">&para;</a></h2>
+<p>Let’s back to our localhost machine, a key pair must be created with the command
+<div class="highlight"><pre><span></span><code>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>rsa
 </code></pre></div>
-<p>控制保留小数位数，使用 <code>decimal</code> 参数（默认保留两位小数）：</p>
-<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="n">Atom</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>  <span class="c1"># 实例化</span>
-<span class="n">a1</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">cal</span><span class="p">(</span><span class="s1">&#39;10.log&#39;</span><span class="p">,</span> <span class="n">decimal</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="sd">&quot;&quot;&quot; &gt;&gt;&gt;</span>
-<span class="sd">文件10.log中，(9, 8, 13, 14)号原子形成的二面角是：179.99520</span>
-<span class="sd">&quot;&quot;&quot;</span>
+Press Enter three times until the command finishes.
+A public key file <code>~/.ssh/id_rsa.pub</code> and a private key file <code>~/.ssh/id_rsa</code> will be generated.</p>
+<p>If your more interested in private and public keys using ssh please referee to this <a href="https://www.ssh.com/academy/ssh-keys#:~:text=An%20SSH%20key%20is%20an,system%20administrators%20and%20power%20users.">article</a>.</p>
+<h2 id="copy-the-public-key-file-to-the-remote-machine">Copy the public key file to the remote machine<a class="headerlink" href="#copy-the-public-key-file-to-the-remote-machine" title="Permanent link">&para;</a></h2>
+<p>Now that you have generated an SSH key pair, in order to be able to login to your machine without a password you need to copy the public key to the server you want to manage.
+<div class="highlight"><pre><span></span><code>ssh-copy-id<span class="w"> </span>remote_username@remote_server_ip_address
 </code></pre></div>
-<h3 id="22">2.2 键角的计算<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
-<p>只需要在类的实例化时传入三个参数即可，<strong>注意第二个原子为顶角</strong>。</p>
-<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="n">Atom</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">)</span>  <span class="c1"># 实例化</span>
-<span class="n">a1</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">cal</span><span class="p">(</span><span class="s1">&#39;10.log&#39;</span><span class="p">,</span> <span class="n">decimal</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="sd">&quot;&quot;&quot; &gt;&gt;&gt;</span>
-<span class="sd">文件10.log中，(9, 8, 13)号原子形成的键角是：27.06505</span>
-<span class="sd">&quot;&quot;&quot;</span>
-</code></pre></div>
-<h3 id="23">2.3 键长的计算<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
-<p>同理，在类的实例化时传入两个参数。</p>
-<h2 id="3">3. 可能出现的问题<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
-<p><strong>1 结果得出的二面角与我想要的二面角互补？</strong></p>
-<p>注意实例化时四个原子编号的顺序。对于（1，2，3，4）中，求的是123平面和234平面的二面角。</p>
-<p><strong>2 如何把结果导入到 csv 或其他文本中？</strong></p>
-<p>还未完成，自己写一个脚本去吧。</p>
-<h2 id="4">4. 源码<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/python3</span>
-<span class="kn">import</span> <span class="nn">math</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-
-<span class="k">class</span> <span class="nc">Atom</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;可以用来批量计算.log文件中的键长、键角和二面角&quot;&quot;&quot;</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">atom</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">matrix</span> <span class="o">=</span> <span class="kc">None</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">atom</span> <span class="o">=</span> <span class="n">atom</span>
-
-    <span class="k">def</span> <span class="nf">get_coor_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;从.log文件中获取原子坐标&quot;&quot;&quot;</span>
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-            <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
-            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lines</span><span class="p">):</span>
-                <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39; NAtoms=&#39;</span><span class="p">):</span>
-                    <span class="n">natoms</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># 定位</span>
-                <span class="k">elif</span> <span class="s1">&#39;Standard orientation&#39;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
-                    <span class="n">geom</span> <span class="o">=</span> <span class="p">[</span><span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">5</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">+</span> <span class="n">natoms</span><span class="p">]]</span>  <span class="c1"># 以空格为区分，按列切</span>
-                    <span class="n">geom</span> <span class="o">=</span> <span class="p">[[</span><span class="nb">float</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span><span class="p">]</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">geom</span><span class="p">]</span>
-        <span class="k">return</span> <span class="n">geom</span>
-
-    <span class="k">def</span> <span class="nf">cal</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">file_name</span><span class="p">,</span> <span class="n">decimal</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;接收参数，把计算结果输出到屏幕上。&quot;&quot;&quot;</span>
-        <span class="n">dic</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;键长&#39;</span><span class="p">,</span> <span class="s1">&#39;键角&#39;</span><span class="p">,</span> <span class="s1">&#39;二面角&#39;</span><span class="p">]))</span>  <span class="c1"># 建立对应关系</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">atom</span><span class="p">)</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;原子数不对哦&#39;</span><span class="p">)</span>
-            <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-        <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">file_name</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">():</span>
-            <span class="k">if</span> <span class="n">file</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.log&#39;</span><span class="p">):</span>
-                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;文件</span><span class="si">{</span><span class="n">file</span><span class="si">}</span><span class="s1">中，</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">atom</span><span class="si">}</span><span class="s1">号原子形成的</span><span class="si">{</span><span class="n">dic</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">atom</span><span class="p">)]</span><span class="si">}</span><span class="s1">是：&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;%.</span><span class="si">{</span><span class="n">decimal</span><span class="si">}</span><span class="s1">f&#39;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="n">file</span><span class="p">))</span>
-
-    <span class="k">def</span> <span class="nf">calculate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;根据原子坐标数，判断计算键长、键角或二面角&quot;&quot;&quot;</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">matrix</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_coor_data</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-        <span class="n">theta</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">calculate_bond_length</span><span class="p">()</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">atom</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span> <span class="k">else</span>
-                 <span class="bp">self</span><span class="o">.</span><span class="n">calculate_bond_angle</span><span class="p">()</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">atom</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span> <span class="k">else</span>
-                 <span class="bp">self</span><span class="o">.</span><span class="n">calculate_dihedral_angle</span><span class="p">()</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">atom</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span> <span class="k">else</span>
-                 <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">))</span>
-        <span class="k">return</span> <span class="n">theta</span>
-
-    <span class="k">def</span> <span class="nf">calculate_bond_length</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;计算两点间的长度&quot;&quot;&quot;</span>
-        <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">matrix</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">atom</span><span class="p">]</span>
-        <span class="n">v1</span> <span class="o">=</span> <span class="p">(</span><span class="n">p2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">p1</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">p2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">p1</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">p2</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">p1</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v1</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">calculate_bond_angle</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;计算三个点形成的角，p2是顶点&quot;&quot;&quot;</span>
-        <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">p3</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">matrix</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">atom</span><span class="p">]</span>
-        <span class="n">v1</span> <span class="o">=</span> <span class="p">(</span><span class="n">p2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">p1</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">p2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">p1</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">p2</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">p1</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-        <span class="n">v2</span> <span class="o">=</span> <span class="p">(</span><span class="n">p3</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">p1</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">p3</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">p1</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">p3</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">p1</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-        <span class="n">dot_product</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">v1</span><span class="p">,</span> <span class="n">v2</span><span class="p">)</span>
-        <span class="n">norm_n1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v1</span><span class="p">)</span>
-        <span class="n">norm_n2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v2</span><span class="p">)</span>
-        <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arccos</span><span class="p">(</span><span class="n">dot_product</span> <span class="o">/</span> <span class="p">(</span><span class="n">norm_n1</span> <span class="o">*</span> <span class="n">norm_n2</span><span class="p">))</span>
-        <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">calculate_dihedral_angle</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;计算四个点的二面角，返回角度，p2p3是两面的交线&quot;&quot;&quot;</span>
-        <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">p3</span><span class="p">,</span> <span class="n">p4</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">matrix</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">atom</span><span class="p">]</span>
-
-        <span class="k">def</span> <span class="nf">calculate_norm_vectors</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">p3</span><span class="p">):</span>
-<span class="w">            </span><span class="sd">&quot;&quot;&quot;计算三个点所成平面的法向量&quot;&quot;&quot;</span>
-            <span class="n">v1</span> <span class="o">=</span> <span class="p">(</span><span class="n">p2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">p1</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">p2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">p1</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">p2</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">p1</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-            <span class="n">v2</span> <span class="o">=</span> <span class="p">(</span><span class="n">p3</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">p1</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">p3</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">p1</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">p3</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">p1</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-            <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cross</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">v1</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">v2</span><span class="p">))</span>
-            <span class="k">return</span> <span class="n">v</span>
-
-        <span class="n">n1</span> <span class="o">=</span> <span class="n">calculate_norm_vectors</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">p3</span><span class="p">)</span>
-        <span class="n">n2</span> <span class="o">=</span> <span class="n">calculate_norm_vectors</span><span class="p">(</span><span class="n">p2</span><span class="p">,</span> <span class="n">p3</span><span class="p">,</span> <span class="n">p4</span><span class="p">)</span>
-        <span class="n">dot_product</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">n1</span><span class="p">,</span> <span class="n">n2</span><span class="p">)</span>
-        <span class="n">norm_n1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">n1</span><span class="p">)</span>
-        <span class="n">norm_n2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">n2</span><span class="p">)</span>
-        <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arccos</span><span class="p">(</span><span class="n">dot_product</span> <span class="o">/</span> <span class="p">(</span><span class="n">norm_n1</span> <span class="o">*</span> <span class="n">norm_n2</span><span class="p">))</span>
-        <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
-<span class="c1"># 使用示例</span>
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">a</span> <span class="o">=</span> <span class="n">Atom</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
-    <span class="n">a1</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">cal</span><span class="p">()</span>
-</code></pre></div>
+You should be able to get onto the remote server without being requested for a password once you’ve followed the preceding instructions.</p>
+<p>To test it just try to login to your server via SSH:
+<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>remote_username@remote_server_ip_address
+</code></pre></div></p>
 
 
 

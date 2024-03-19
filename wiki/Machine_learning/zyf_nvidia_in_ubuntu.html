@@ -10,13 +10,13 @@
         <meta name="author" content="Yifei Zhu">
       
       
-        <link rel="canonical" href="https://yifei-zhu.github.io/LanGroupWiki/wiki/Beginners/sshfs.html">
+        <link rel="canonical" href="https://yifei-zhu.github.io/LanGroupWiki/wiki/Machine_learning/zyf_nvidia_in_ubuntu.html">
       
       
-        <link rel="prev" href="login_without_passwd.html">
+        <link rel="prev" href="../Beginners/zyf_install_wsl.html">
       
       
-        <link rel="next" href="install_wsl.html">
+        <link rel="next" href="zyf_pytorch_in_ubuntu.html">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>How To Use SSHFS to Mount Remote File Systems Over SSH - Lan Group Wiki (SCNU)</title>
+        <title>How to use NVIDIA GPUs on Linux - Lan Group Wiki (SCNU)</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introdcution" class="md-skip">
+        <a href="#1-install-a-suitable-nvidia-driver" class="md-skip">
           Skip to content
         </a>
       
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How To Use SSHFS to Mount Remote File Systems Over SSH
+              How to use NVIDIA GPUs on Linux
             
           </span>
         </div>
@@ -305,6 +305,8 @@
   
     
     
+      
+        
       
         
       
@@ -496,16 +498,10 @@
                 
   
   
-    
   
   
-  
     
     
-      
-        
-      
-        
       
         
       
@@ -519,12 +515,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -538,7 +534,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Newcomer Guide
@@ -552,7 +548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="welcome.html" class="md-nav__link">
+      <a href="../Beginners/welcome.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -573,7 +569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="login_without_passwd.html" class="md-nav__link">
+      <a href="../Beginners/zyf_login_without_passwd.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -591,28 +587,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    How To Use SSHFS to Mount Remote File Systems Over SSH
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="sshfs.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Beginners/zyf_sshfs.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -621,93 +599,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introdcution" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introdcution
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-on-ubuntu" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration on Ubuntu
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration on Ubuntu">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      1 Installation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-creat-a-local-directory-for-remote-mounting" class="md-nav__link">
-    <span class="md-ellipsis">
-      2 Creat a local directory for remote mounting
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-mount-remote-file-systems" class="md-nav__link">
-    <span class="md-ellipsis">
-      3 Mount Remote File Systems
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-check-mounting" class="md-nav__link">
-    <span class="md-ellipsis">
-      4 Check mounting
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-auto-mount-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      5 Auto mount configuration
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -720,53 +611,11 @@
   
   
     <li class="md-nav__item">
-      <a href="install_wsl.html" class="md-nav__link">
+      <a href="../Beginners/zyf_install_wsl.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     How to install WSL on Windows
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="nvidia_in_ubuntu.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How to use NVIDIA GPUs on Linux
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="pytorch_in_ubuntu.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How to use PyTorch on Linux
   </span>
   
 
@@ -858,6 +707,295 @@
                 
   
   
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Machine Learning
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Machine Learning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Environment configuration
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Environment configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    How to use NVIDIA GPUs on Linux
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="zyf_nvidia_in_ubuntu.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    How to use NVIDIA GPUs on Linux
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-install-a-suitable-nvidia-driver" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 Install a Suitable NVIDIA Driver
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 Install a Suitable NVIDIA Driver">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-1-manually-download-and-install" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 1: Manually download and install
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-2-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 2: Command line
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 2: Command line">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-your-package-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update your package list
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-available-drivers" class="md-nav__link">
+    <span class="md-ellipsis">
+      List available drivers:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-the-recommended-or-the-specific-version-nvidia-driver" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install the recommended or the specific version NVIDIA driver
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reboot-your-computer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reboot your computer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-install-cuda-toolkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 Install CUDA Toolkit
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="zyf_pytorch_in_ubuntu.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use PyTorch on Linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="zyf_unimol_install.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    An example of a successful Uni-Mol installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
   
   
     
@@ -874,10 +1012,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
         
           
-          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -888,8 +1026,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
             Code Sharing
           </label>
@@ -944,10 +1082,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -958,8 +1096,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
             <span class="md-nav__icon md-icon"></span>
             Recommended Resources
           </label>
@@ -1068,64 +1206,65 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introdcution" class="md-nav__link">
+  <a href="#1-install-a-suitable-nvidia-driver" class="md-nav__link">
     <span class="md-ellipsis">
-      Introdcution
+      1 Install a Suitable NVIDIA Driver
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-on-ubuntu" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration on Ubuntu
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration on Ubuntu">
+    <nav class="md-nav" aria-label="1 Install a Suitable NVIDIA Driver">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-installation" class="md-nav__link">
+  <a href="#method-1-manually-download-and-install" class="md-nav__link">
     <span class="md-ellipsis">
-      1 Installation
+      Method 1: Manually download and install
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-creat-a-local-directory-for-remote-mounting" class="md-nav__link">
+  <a href="#method-2-command-line" class="md-nav__link">
     <span class="md-ellipsis">
-      2 Creat a local directory for remote mounting
+      Method 2: Command line
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 2: Command line">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-your-package-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update your package list
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-mount-remote-file-systems" class="md-nav__link">
+  <a href="#list-available-drivers" class="md-nav__link">
     <span class="md-ellipsis">
-      3 Mount Remote File Systems
+      List available drivers:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-check-mounting" class="md-nav__link">
+  <a href="#install-the-recommended-or-the-specific-version-nvidia-driver" class="md-nav__link">
     <span class="md-ellipsis">
-      4 Check mounting
+      Install the recommended or the specific version NVIDIA driver
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-auto-mount-configuration" class="md-nav__link">
+  <a href="#reboot-your-computer" class="md-nav__link">
     <span class="md-ellipsis">
-      5 Auto mount configuration
+      Reboot your computer
     </span>
   </a>
   
@@ -1133,6 +1272,20 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-install-cuda-toolkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 Install CUDA Toolkit
+    </span>
+  </a>
   
 </li>
       
@@ -1158,43 +1311,56 @@
       <a href="../tags.html#linux" class="md-tag">Linux</a>
     
   
+    
+    
+    
+      <a href="../tags.html#nvidia" class="md-tag">NVIDIA</a>
+    
+  
 </nav>
 
 
 
-  <h1>How To Use SSHFS to Mount Remote File Systems Over SSH</h1>
+  <h1>How to use NVIDIA GPUs on Linux</h1>
 
-<h2 id="introdcution">Introdcution<a class="headerlink" href="#introdcution" title="Permanent link">&para;</a></h2>
-<p>SSHFS itself is a file system in user space (FUSE) that uses the SSH File Transfer Protocol (SFTP) to mount a remote file system.
-SSHFS command is a client tool for using SSHFS to mount a remote file system from another server locally on your machine.</p>
-<h2 id="configuration-on-ubuntu">Configuration on Ubuntu<a class="headerlink" href="#configuration-on-ubuntu" title="Permanent link">&para;</a></h2>
-<h3 id="1-installation">1 Installation<a class="headerlink" href="#1-installation" title="Permanent link">&para;</a></h3>
+<p>Follow this wiki step by step to set up NVIDIA GPU on Linux (using Ubuntu 22.04 as an example)</p>
+<h2 id="1-install-a-suitable-nvidia-driver">1 Install a Suitable NVIDIA Driver<a class="headerlink" href="#1-install-a-suitable-nvidia-driver" title="Permanent link">&para;</a></h2>
+<h3 id="method-1-manually-download-and-install">Method 1: Manually download and install<a class="headerlink" href="#method-1-manually-download-and-install" title="Permanent link">&para;</a></h3>
+<p>This driver can be manually downloaded and installed from the <a href="https://www.nvidia.cn/geforce/drivers/">NVIDIA official website</a>.</p>
+<h3 id="method-2-command-line">Method 2: Command line<a class="headerlink" href="#method-2-command-line" title="Permanent link">&para;</a></h3>
+<h5 id="update-your-package-list">Update your package list<a class="headerlink" href="#update-your-package-list" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
-sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>sshfs
 </code></pre></div>
-<h3 id="2-creat-a-local-directory-for-remote-mounting">2 Creat a local directory for remote mounting<a class="headerlink" href="#2-creat-a-local-directory-for-remote-mounting" title="Permanent link">&para;</a></h3>
-<p>For example:
-<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>/mnt/local/path
-</code></pre></div></p>
-<h3 id="3-mount-remote-file-systems">3 Mount Remote File Systems<a class="headerlink" href="#3-mount-remote-file-systems" title="Permanent link">&para;</a></h3>
-<p><div class="highlight"><pre><span></span><code>sshfs<span class="w"> </span>username@1:/your/remote/path<span class="w"> </span>/mnt/local/path
+<h5 id="list-available-drivers">List available drivers:<a class="headerlink" href="#list-available-drivers" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>ubuntu-drivers<span class="w"> </span>devices
 </code></pre></div>
-For example:
-<div class="highlight"><pre><span></span><code>sshfs<span class="w"> </span>zhuyf@192.168.5.200:/data/home/zhuyf<span class="w"> </span>/mnt/local/path
-</code></pre></div></p>
-<h3 id="4-check-mounting">4 Check mounting<a class="headerlink" href="#4-check-mounting" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>df<span class="w"> </span>-hT<span class="w"> </span>
+<h5 id="install-the-recommended-or-the-specific-version-nvidia-driver">Install the recommended or the specific version NVIDIA driver<a class="headerlink" href="#install-the-recommended-or-the-specific-version-nvidia-driver" title="Permanent link">&para;</a></h5>
+<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ubuntu-drivers<span class="w"> </span>autoinstall
 </code></pre></div>
-<h3 id="5-auto-mount-configuration">5 Auto mount configuration<a class="headerlink" href="#5-auto-mount-configuration" title="Permanent link">&para;</a></h3>
-<p>You can mount the remote directory without manually typing the command always by adding a <code>fstab</code> method.
-You should open the <code>/etc/fstab</code> file to edit:
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>vim<span class="w"> </span>/etc/fstab
+or</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>nvidia-driver-532
 </code></pre></div>
-Then you should add the following command at the end of the file.
-<div class="highlight"><pre><span></span><code>username@1:/your/remote/path<span class="w"> </span>/mnt/local/path<span class="w"> </span>fuse.sshfs<span class="w"> </span>noauto,x-systemd.automount,_netdev,IdentityFile<span class="o">=</span>/home/name/.ssh/id_rsa,allow_other,reconnec
+<h5 id="reboot-your-computer">Reboot your computer<a class="headerlink" href="#reboot-your-computer" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>reboot
 </code></pre></div>
-Finally, Use the following command to make the configuration take effect.</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>mount<span class="w"> </span>-a
+<h2 id="2-install-cuda-toolkit">2 Install CUDA Toolkit<a class="headerlink" href="#2-install-cuda-toolkit" title="Permanent link">&para;</a></h2>
+<p>Visit the <a href="https://developer.nvidia.com/cuda-downloads">CUDA Toolkits Downloads pages</a> on the NVIDIA official website.
+Then choose the options according to your situation.
+NVIDIA provide three ways to install the CUDA Toolkit with specific version.
+Here is the <code>runfile(local)</code> I recommend because I am sure you are as lazy as me.</p>
+<div class="admonition info">
+<p class="admonition-title">Installation of other development tools</p>
+<p>While you run the command <code>sudo sh cuda_xxxxxx_linux.run</code>, you need several development tools, such as <code>gcc</code>, <code>g++</code>, <code>make</code>, etc.
+  If you haven't installed them yet, you can use <code>sudo apt install build-essential</code> to install almost of them.</p>
+</div>
+<p>After the installation is complete, to ensure that <code>nvcc</code> and other CUDA commands can be called from anywhere, you need to add the CUDA Toolkit's binary directory to your PATH environment variable, as well as configure the LD_LIBRARY_PATH for the library files.
+You can add the following lines to your <code>.bashrc</code> or <code>.profile</code> file:</p>
+<p><div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span>/usr/local/cuda-12.4/bin:<span class="nv">$PATH</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/usr/local/cuda-12.4/lib64:<span class="nv">$LD_LIBRARY_PATH</span>
+</code></pre></div>
+Then you should apply the environment variables</p>
+<p>Finally, use the following command to test the environment configuration:</p>
+<div class="highlight"><pre><span></span><code>nvcc<span class="w"> </span>-V
 </code></pre></div>
 
 

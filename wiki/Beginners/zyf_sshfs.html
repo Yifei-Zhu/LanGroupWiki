@@ -10,13 +10,13 @@
         <meta name="author" content="Yifei Zhu">
       
       
-        <link rel="canonical" href="https://yifei-zhu.github.io/LanGroupWiki/wiki/Beginners/login_without_passwd.html">
+        <link rel="canonical" href="https://yifei-zhu.github.io/LanGroupWiki/wiki/Beginners/zyf_sshfs.html">
       
       
-        <link rel="prev" href="welcome.html">
+        <link rel="prev" href="zyf_login_without_passwd.html">
       
       
-        <link rel="next" href="sshfs.html">
+        <link rel="next" href="zyf_install_wsl.html">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>How to connect without password using SSH - Lan Group Wiki (SCNU)</title>
+        <title>How To Use SSHFS to Mount Remote File Systems Over SSH - Lan Group Wiki (SCNU)</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#make-sure-that-ssh-server-is-running" class="md-skip">
+        <a href="#introdcution" class="md-skip">
           Skip to content
         </a>
       
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to connect without password using SSH
+              How To Use SSHFS to Mount Remote File Systems Over SSH
             
           </span>
         </div>
@@ -305,6 +305,8 @@
   
     
     
+      
+        
       
         
       
@@ -511,10 +513,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -570,6 +568,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="zyf_login_without_passwd.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to connect without password using SSH
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -584,18 +603,18 @@
           
   
   <span class="md-ellipsis">
-    How to connect without password using SSH
+    How To Use SSHFS to Mount Remote File Systems Over SSH
   </span>
   
 
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="login_without_passwd.html" class="md-nav__link md-nav__link--active">
+      <a href="zyf_sshfs.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    How to connect without password using SSH
+    How To Use SSHFS to Mount Remote File Systems Over SSH
   </span>
   
 
@@ -615,38 +634,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#make-sure-that-ssh-server-is-running" class="md-nav__link">
+  <a href="#introdcution" class="md-nav__link">
     <span class="md-ellipsis">
-      Make sure that SSH server is running
+      Introdcution
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#connect-to-remote-machine" class="md-nav__link">
+  <a href="#configuration-on-ubuntu" class="md-nav__link">
     <span class="md-ellipsis">
-      Connect to remote machine
+      Configuration on Ubuntu
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration on Ubuntu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 Installation
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#generate-private-and-public-keys" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-creat-a-local-directory-for-remote-mounting" class="md-nav__link">
     <span class="md-ellipsis">
-      Generate private and public keys
+      2 Creat a local directory for remote mounting
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#copy-the-public-key-file-to-the-remote-machine" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#3-mount-remote-file-systems" class="md-nav__link">
     <span class="md-ellipsis">
-      Copy the public key file to the remote machine
+      3 Mount Remote File Systems
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-check-mounting" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 Check mounting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-auto-mount-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 Auto mount configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -666,74 +718,11 @@
   
   
     <li class="md-nav__item">
-      <a href="sshfs.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How To Use SSHFS to Mount Remote File Systems Over SSH
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="install_wsl.html" class="md-nav__link">
+      <a href="zyf_install_wsl.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     How to install WSL on Windows
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="nvidia_in_ubuntu.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How to use NVIDIA GPUs on Linux
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="pytorch_in_ubuntu.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How to use PyTorch on Linux
   </span>
   
 
@@ -848,7 +837,7 @@
             
   
   <span class="md-ellipsis">
-    Code Sharing
+    Machine Learning
   </span>
   
 
@@ -857,6 +846,171 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Machine Learning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Environment configuration
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Environment configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Machine_learning/zyf_nvidia_in_ubuntu.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use NVIDIA GPUs on Linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Machine_learning/zyf_pytorch_in_ubuntu.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use PyTorch on Linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Machine_learning/zyf_unimol_install.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    An example of a successful Uni-Mol installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Code Sharing
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
             Code Sharing
           </label>
@@ -911,10 +1065,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -925,8 +1079,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
             <span class="md-nav__icon md-icon"></span>
             Recommended Resources
           </label>
@@ -1035,38 +1189,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#make-sure-that-ssh-server-is-running" class="md-nav__link">
+  <a href="#introdcution" class="md-nav__link">
     <span class="md-ellipsis">
-      Make sure that SSH server is running
+      Introdcution
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#connect-to-remote-machine" class="md-nav__link">
+  <a href="#configuration-on-ubuntu" class="md-nav__link">
     <span class="md-ellipsis">
-      Connect to remote machine
+      Configuration on Ubuntu
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration on Ubuntu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 Installation
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#generate-private-and-public-keys" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-creat-a-local-directory-for-remote-mounting" class="md-nav__link">
     <span class="md-ellipsis">
-      Generate private and public keys
+      2 Creat a local directory for remote mounting
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#copy-the-public-key-file-to-the-remote-machine" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#3-mount-remote-file-systems" class="md-nav__link">
     <span class="md-ellipsis">
-      Copy the public key file to the remote machine
+      3 Mount Remote File Systems
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-check-mounting" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 Check mounting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-auto-mount-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 Auto mount configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1096,36 +1283,40 @@
 
 
 
-  <h1>How to connect without password using SSH</h1>
+  <h1>How To Use SSHFS to Mount Remote File Systems Over SSH</h1>
 
-<h2 id="make-sure-that-ssh-server-is-running">Make sure that SSH server is running<a class="headerlink" href="#make-sure-that-ssh-server-is-running" title="Permanent link">&para;</a></h2>
-<p>Check service status using: <code>sudo service sshd status or</code> or <code>sudo systemctl status sshd</code></p>
-<p>If the SSH service is closed, run the following command to start the ssh service: <code>sudo service sshd start</code> or <code>sudo systemtcl start sshd</code>.</p>
-<h2 id="connect-to-remote-machine">Connect to remote machine<a class="headerlink" href="#connect-to-remote-machine" title="Permanent link">&para;</a></h2>
-<p>Run the command <code>ssh remote_username@remote_server_ip_address</code> if it is the first time you logged into this host, you will get something like this :</p>
-<p><div class="highlight"><pre><span></span><code>The<span class="w"> </span>authenticity<span class="w"> </span>of<span class="w"> </span>host<span class="w"> </span>XXXXXX<span class="w"> </span>can’t<span class="w"> </span>be<span class="w"> </span>established.
-
-RSA<span class="w"> </span>key<span class="w"> </span>fingerprint<span class="w"> </span>is<span class="w"> </span>7c:e7:51:3b:86:70:07:ab:65:a9:bf:2d:c0:7b:1b:a7.
-
-Are<span class="w"> </span>you<span class="w"> </span>sure<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span><span class="k">continue</span><span class="w"> </span>connecting<span class="w"> </span><span class="o">(</span>yes/no<span class="o">)</span>?
+<h2 id="introdcution">Introdcution<a class="headerlink" href="#introdcution" title="Permanent link">&para;</a></h2>
+<p>SSHFS itself is a file system in user space (FUSE) that uses the SSH File Transfer Protocol (SFTP) to mount a remote file system.
+SSHFS command is a client tool for using SSHFS to mount a remote file system from another server locally on your machine.</p>
+<h2 id="configuration-on-ubuntu">Configuration on Ubuntu<a class="headerlink" href="#configuration-on-ubuntu" title="Permanent link">&para;</a></h2>
+<h3 id="1-installation">1 Installation<a class="headerlink" href="#1-installation" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>sshfs
 </code></pre></div>
-Type <code>yes</code> and then it will ask you to enter the password.
-You are now connected to the remote machine with the password.</p>
-<h2 id="generate-private-and-public-keys">Generate private and public keys<a class="headerlink" href="#generate-private-and-public-keys" title="Permanent link">&para;</a></h2>
-<p>Let’s back to our localhost machine, a key pair must be created with the command
-<div class="highlight"><pre><span></span><code>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>rsa
-</code></pre></div>
-Press Enter three times until the command finishes.
-A public key file <code>~/.ssh/id_rsa.pub</code> and a private key file <code>~/.ssh/id_rsa</code> will be generated.</p>
-<p>If your more interested in private and public keys using ssh please referee to this <a href="https://www.ssh.com/academy/ssh-keys#:~:text=An%20SSH%20key%20is%20an,system%20administrators%20and%20power%20users.">article</a>.</p>
-<h2 id="copy-the-public-key-file-to-the-remote-machine">Copy the public key file to the remote machine<a class="headerlink" href="#copy-the-public-key-file-to-the-remote-machine" title="Permanent link">&para;</a></h2>
-<p>Now that you have generated an SSH key pair, in order to be able to login to your machine without a password you need to copy the public key to the server you want to manage.
-<div class="highlight"><pre><span></span><code>ssh-copy-id<span class="w"> </span>remote_username@remote_server_ip_address
-</code></pre></div>
-You should be able to get onto the remote server without being requested for a password once you’ve followed the preceding instructions.</p>
-<p>To test it just try to login to your server via SSH:
-<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>remote_username@remote_server_ip_address
+<h3 id="2-creat-a-local-directory-for-remote-mounting">2 Creat a local directory for remote mounting<a class="headerlink" href="#2-creat-a-local-directory-for-remote-mounting" title="Permanent link">&para;</a></h3>
+<p>For example:
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>/mnt/local/path
 </code></pre></div></p>
+<h3 id="3-mount-remote-file-systems">3 Mount Remote File Systems<a class="headerlink" href="#3-mount-remote-file-systems" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>sshfs<span class="w"> </span>username@1:/your/remote/path<span class="w"> </span>/mnt/local/path
+</code></pre></div>
+For example:
+<div class="highlight"><pre><span></span><code>sshfs<span class="w"> </span>zhuyf@192.168.5.200:/data/home/zhuyf<span class="w"> </span>/mnt/local/path
+</code></pre></div></p>
+<h3 id="4-check-mounting">4 Check mounting<a class="headerlink" href="#4-check-mounting" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>df<span class="w"> </span>-hT<span class="w"> </span>
+</code></pre></div>
+<h3 id="5-auto-mount-configuration">5 Auto mount configuration<a class="headerlink" href="#5-auto-mount-configuration" title="Permanent link">&para;</a></h3>
+<p>You can mount the remote directory without manually typing the command always by adding a <code>fstab</code> method.
+You should open the <code>/etc/fstab</code> file to edit:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>vim<span class="w"> </span>/etc/fstab
+</code></pre></div>
+Then you should add the following command at the end of the file.
+<div class="highlight"><pre><span></span><code>username@1:/your/remote/path<span class="w"> </span>/mnt/local/path<span class="w"> </span>fuse.sshfs<span class="w"> </span>noauto,x-systemd.automount,_netdev,IdentityFile<span class="o">=</span>/home/name/.ssh/id_rsa,allow_other,reconnec
+</code></pre></div>
+Finally, Use the following command to make the configuration take effect.</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>mount<span class="w"> </span>-a
+</code></pre></div>
 
 
 

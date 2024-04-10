@@ -17,6 +17,7 @@ There are many methods and configurations for installation, we will only provide
 Before the installation of Uni-Mol, [the NVIDIA GPUs should be correctly set up](./nvidia_in_ubuntu.md).
 
 Here, some important configurations of my computer and working environment before installation are listed below:
+
 - System: Ubuntu 22.04
 - GPU*1: NVIDIA GeForce GTX 1070
 - Driver Version 536.23
@@ -24,6 +25,7 @@ Here, some important configurations of my computer and working environment befor
 - Anaconda Distribution
 
 Finally, the environment configurations:
+
 - Rdkit==2022.9.3
 - Python==3.8
 - PyTorch==2.2.1

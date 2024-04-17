@@ -19,7 +19,7 @@ Everyone is welcome to collaborate and improve together, please refer to *[How t
 1. [How to start?](./wiki/Authors/submit_wiki_en.md) -->
 
 ## How to access the group's website ?
-LanGroupWebsite:
+LanGroupHomepage:
 
 - Public domain name:
 - Campus network IP: 222.200.137.121:8080
@@ -35,7 +35,7 @@ LanGroupWiki:
   - Domain name: wiki.langroup.local
   - IP: 192.168.5.190:8000
 
-To enable access to LanGroupWebsite or LanGroupWiki through a domain name within your local network, it's necessary to adjust the DNS settings to map the domain names to the appropriate IP address.
+To enable access to LanGroupHomepage or LanGroupWiki through a domain name within your local network, it's necessary to adjust the DNS settings to map the domain names to the appropriate IP address.
 For local DNS resolution, this can be achieved by appending specific entries to the hosts file on your computer. To do so, simply add the lines below to the end of your hosts file:
 ```
 192.168.5.190  wiki.langroup.local

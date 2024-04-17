@@ -141,9 +141,13 @@ nav:
 
       - Newcomer Guide:
         - Navigation: ./wiki/Beginners/welcome.md
-        - ./wiki/Beginners/zyf_login_without_passwd.md
-        - ./wiki/Beginners/zyf_sshfs.md
-        - ./wiki/Beginners/zyf_install_wsl.md
+          - Linux:
+            - ./wiki/Beginners/zyf_login_without_passwd.md
+            - ./wiki/Beginners/zyf_sshfs.md
+          - WSL:
+            - ./wiki/Beginners/zyf_install_wsl.md
+            - ./wiki/Beginners/zyf_ssh_in_wsl.md
+
 
       - Software Usage:
         - ./wiki/Software_guide/test.md
